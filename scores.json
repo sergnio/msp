@@ -1,0 +1,722 @@
+{
+   "2015112600": {
+      "home": {
+         "score": {
+            "1": 7,
+            "2": 17,
+            "3": 14,
+            "4": 7,
+            "5": 0,
+            "T": 45
+         },
+         "abbr": "DET",
+         "to": 3
+      },
+      "away": {
+         "score": {
+            "1": 0,
+            "2": 7,
+            "3": 0,
+            "4": 7,
+            "5": 0,
+            "T": 14
+         },
+         "abbr": "PHI",
+         "to": 3
+      },
+      "bp": 12,
+      "down": 0,
+      "togo": 0,
+      "clock": "00:41",
+      "posteam": "PHI",
+      "note": null,
+      "redzone": false,
+      "stadium": "Ford Field",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "FOX",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": "",
+      "qtr": "Final"
+   },
+   "2015112601": {
+      "home": {
+         "score": {
+            "1": 3,
+            "2": 0,
+            "3": 3,
+            "4": 8,
+            "5": 0,
+            "T": 14
+         },
+         "abbr": "DAL",
+         "to": 0
+      },
+      "away": {
+         "score": {
+            "1": 10,
+            "2": 13,
+            "3": 7,
+            "4": 3,
+            "5": 0,
+            "T": 33
+         },
+         "abbr": "CAR",
+         "to": 0
+      },
+      "bp": 6,
+      "down": 0,
+      "togo": 0,
+      "clock": "00:31",
+      "posteam": "CAR",
+      "note": null,
+      "redzone": false,
+      "stadium": "AT&T Stadium",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "CBS",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": "",
+      "qtr": "Final"
+   },
+   "2015112602": {
+      "home": {
+         "score": {
+            "1": 7,
+            "2": 6,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "T": 13
+         },
+         "abbr": "GB",
+         "to": 0
+      },
+      "away": {
+         "score": {
+            "1": 0,
+            "2": 14,
+            "3": 0,
+            "4": 3,
+            "5": 0,
+            "T": 17
+         },
+         "abbr": "CHI",
+         "to": 1
+      },
+      "bp": 10,
+      "down": 0,
+      "togo": 0,
+      "clock": "00:22",
+      "posteam": "CHI",
+      "note": null,
+      "redzone": false,
+      "stadium": "Lambeau Field",
+      "media": {
+         "radio": {
+            "home": "82",
+            "away": null
+         },
+         "tv": "NBC",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": "",
+      "qtr": "Final"
+   },
+   "2015112900": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "WAS",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "NYG",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "FedExField",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "FOX",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112901": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "ATL",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "MIN",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "Georgia Dome",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "FOX",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112902": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "CIN",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "STL",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "Paul Brown Stadium",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "FOX",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112903": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "HOU",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "NO",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "NRG Stadium",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "FOX",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112904": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "IND",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "TB",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "Lucas Oil Stadium",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "FOX",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112905": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "NYJ",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "MIA",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "MetLife Stadium",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "CBS",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112906": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "JAC",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "SD",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "EverBank Field",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "CBS",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112907": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "TEN",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "OAK",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "Nissan Stadium",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "CBS",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112908": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "KC",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "BUF",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "Arrowhead Stadium",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "CBS",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112909": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "SF",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "ARI",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "Levi's Stadium",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "FOX",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112910": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "SEA",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "PIT",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "CenturyLink Field",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "CBS",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015112911": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "DEN",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "NE",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "Sports Authority Field at Mile High",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "NBC",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   },
+   "2015113000": {
+      "home": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "CLE",
+         "to": null
+      },
+      "away": {
+         "score": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "T": null
+         },
+         "abbr": "BAL",
+         "to": null
+      },
+      "bp": 0,
+      "down": null,
+      "togo": null,
+      "clock": null,
+      "posteam": null,
+      "note": null,
+      "redzone": null,
+      "stadium": "FirstEnergy Stadium",
+      "media": {
+         "radio": {
+            "home": null,
+            "away": null
+         },
+         "tv": "ESPN",
+         "sat": null,
+         "sathd": null
+      },
+      "yl": null,
+      "qtr": null
+   }
+}

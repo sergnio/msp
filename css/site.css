@@ -1,0 +1,34 @@
+@media screen and (max-width: 767px) {
+}@media (min-width: 768px) {
+}@media (min-width: 768px) {
+}@media (max-width: 767px) {
+}@media (min-width: 768px) {
+}@media (min-width: 768px) {
+}@media (max-width: 767px) {
+}@media (max-width: 767px) {
+}@media (min-width: 1000px) {
+  .table.againstSpread {
+    width: 60%;
+  }
+}
+.table.againstSpread th {
+  cursor: pointer ;
+}
+.table.againstSpread .ascending:before {
+  content: "\e093";
+}
+.table.againstSpread .ascending:before,
+.table.againstSpread .descending:before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.table.againstSpread .descending:before {
+  content: "\e094";
+}

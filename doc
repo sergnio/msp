@@ -1,0 +1,18 @@
+   desc: This file consolodates some of the sql centric php functions.  
+function loadHomepageTextXXXXX() {
+function insertOrUpdateLeagueGreetingText(
+function isValidUserAccount(
+function getLeagueId(
+function addLeagueMembershipToUser(
+function getLeagueCommissionerViaLeagueName(
+function validateUserID (
+function get_username_from_id(
+function isUniqueUsername(
+function isUniqueLeagueName(
+function isUniqueTextField(
+function insertNewLeague(
+function insertNewUser(
+function insertNewPlayer(
+function buildLeaguesArrayNsp(
+function recordLogin(
+function login($username, $password) {

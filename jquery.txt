@@ -1,0 +1,11 @@
+if ( $( '#nonexistent' ) ) {
+  // Wrong! This code will always run!
+}
+
+if ( $( '#nonexistent' ).length > 0 ) {
+  // Correct! This code will only run if there's an element in your page
+  // with an ID of 'nonexistent'
+}
+if ( $( '#nonexistent' ).length ) {
+  // This code will only run if there's a matching element
+}

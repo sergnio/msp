@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>MySuperPicks.com - Standings</title>
+   
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- copy-paste https://developers.google.com/speed/libraries/#jquery
+        NB!  jquery was moved from HERE#1 to here.  Bootstrap drop downs failed. -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      
+   <!-- copy-paste  http://getbootstrap.com/getting-started/ April 2016 hfs -->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+         integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+<table id='single' style='margin-left:auto;margin-right:auto;'>
+         <thead>
+            <tr>
+               <th style='text-align:center'>Player</th>
+               <th style='text-align:center'>W</th>
+               <th style='text-align:center'>L</th>
+               <th style='text-align:center'>T</th>
+               <th style='text-align:center'>Tot</th>
+               <th style='text-align:center;'>Picks</th>
+            </tr>
+         </thead>
+         <tbody>
+      
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>JamesW</td>
+            <td style='padding-left:5px;padding-right:10px;'>5</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>5.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>HOU-MIN-OAK-CIN-ARI</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>bobby.bloch</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>4.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>SD-CIN-DEN-MIN-ARI</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>JoeD</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>4.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>NYJ-MIN-ARI-CIN-STL</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>JohnLawler</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>4.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>MIN-CIN-SF-DEN-OAK</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>Minn Mojo</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>4.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>MIN-ARI-ATL-HOU-CIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>nateskala</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>4.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>NE-DET-STL-ARI-MIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>aleisen</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>ARI-BAL-ATL-HOU-MIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>bigd2144</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>NYG-ARI-DEN-MIN-DET</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>bryanscherr</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>NO-CIN-NYJ-KC-MIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>JDoc</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>ARI-BAL-OAK-MIN-ATL</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>LDupree</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>ARI-NO-GB-CIN-MIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>metcalfe</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>BAL-CIN-KC-MIN-CAR</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>mwoods</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>DEN-NO-TB-ARI-TEN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>timmysan</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>SEA-NO-ARI-MIN-NE</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>tmurphy</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>DET-DAL-BAL-ARI-MIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>bpd</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>DEN-CIN-ARI-SF-CAR</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>cullbry</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>GB-ATL-HOU-MIN-NE</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>Extreme Unction</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>DEN-CIN-NYJ-ARI-CHI</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>J.kramer119</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>GB-CIN-HOU-CHI-NE</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>Jason Weis</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>ATL-NE-NYJ-CIN-MIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>mouska</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>STL-ATL-PIT-ARI-MIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>rickmiller@q.com</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>NYJ-ATL-MIN-ARI-CIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>rothdaryl</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>CAR-SEA-CIN-MIN-ARI</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>shawnp</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>SF-OAK-DEN-IND-PIT</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>tbruggers</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>NYJ-GB-MIN-KC-ARI</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>tmcdonnel</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>DEN-NYJ-SF-CIN-NE</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>TommyT</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>MIA-MIN-GB-ARI-CIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>Trzynka</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>MIN-ARI-GB-SEA-CIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>ward</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>3.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>CLE-MIN-DEN-OAK-SEA</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>BHoffman</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>NYG-IND-CHI-ATL-NE</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>brian_felten</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>BAL-DET-MIN-CIN-NYJ</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>chris</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>KC-CIN-SD-NYJ-ATL</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>Djmikelarry</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>CHI-IND-DET-DEN-NYG</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>kbradford</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>MIN-CAR-NO-PIT-ARI</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>mjax33</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>SD-MIN-NE-ATL-GB</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>rickjust</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>MIA-SEA-CIN-NO-MIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>trymucha</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>CAR-GB-NO-ARI-MIN</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>34Bears</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>ATL-CHI-NYJ-ARI-STL</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>BigBear1</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>TEN-SEA-STL-ARI-CHI</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>fella624</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>ATL-STL-SEA-GB-IND</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>KatieD</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>CLE-MIN-ATL-PIT-OAK</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;;background-color:MistyRose'>
+            <td style='padding-left:5px;padding-right:20px;'>matt</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>GB-MIA-DAL-NYJ-STL</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>mferry</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>MIN-ARI-PIT-NYJ-GB</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>Nickp</td>
+            <td style='padding-left:5px;padding-right:10px;'>2</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>2.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>ATL-GB-CIN-ARI-DET</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>AdamD</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>SF-BAL-DET-NYJ-HOU</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>bencarlton</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>PIT-MIN-GB-SD-NYJ</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>SiouxForever</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>BAL-SF-ARI-SEA-CAR</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>thatswhatshesaid</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>NO-HOU-CLE-CHI-ATL</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>Wagnhea</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.5</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>CIN-GB-NYG-CHI-MIA</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>Ellisd4</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>3</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>SEA-NYJ-IND-GB</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>HBB322</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>MIA-ATL-ARI-SEA-DET</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>kpersinger</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>NYJ-ATL-GB-PIT-ARI</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>Osowski</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>CHI-ARI-PIT-NYJ-DET</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>trustworthyman</td>
+            <td style='padding-left:5px;padding-right:10px;'>1</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>1.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>CAR-MIA-NYJ-GB-STL</td>
+         </tr>
+         <tr  style='border-style:solid;border-width:1px;border-color:LightGrey;padding-left:5px;padding-right:10px;'>
+            <td style='padding-left:5px;padding-right:20px;'>tpawula</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>4</td>
+            <td style='padding-left:5px;padding-right:10px;'>0</td>
+            <td style='padding-left:5px;padding-right:10px;'>0.0</td>
+            <td style='white-space:nowrap;padding-left:20px;padding-right:10px;word-spacing:10px;font-family:Lucida Console;'>GB-NYJ-CAR-SEA</td>
+         </tr>
+      </tbody>
+   </table>
+</body>
+</html>

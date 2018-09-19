@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.mysuperpicks.com/$1 [R,L]
+
+Header set Strict-Transport-Security "max-age=604800" env=HTTPS
+

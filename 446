@@ -1,0 +1,100 @@
+================================
+writeDataToFile() message from FILE:Array
+(
+    [cottonplayer] => Array
+        (
+            [6] => Array
+                (
+                    [0] => -
+                    [1] => np
+                    [2] => curse
+                )
+
+        )
+
+    [hughplayer] => Array
+        (
+            [6] => Array
+                (
+                    [0] => DEN
+                    [1] => lo
+                    [2] => bless
+                )
+
+        )
+
+    [silkplayer] => Array
+        (
+            [6] => Array
+                (
+                    [0] => -
+                    [1] => np
+                    [2] => curse
+                )
+
+        )
+
+    [woolplayer] => Array
+        (
+            [6] => Array
+                (
+                    [0] => -
+                    [1] => np
+                    [2] => curse
+                )
+
+        )
+
+)
+:C:\xampp\htdocs\nflx\support_ko_last_man3.php.  2016-08-13T15:34:40-07:00
+444 after cals, a_player: 
+================================
+writeDataToFile() message from FILE:Array
+(
+    [cottonplayer] => Array
+        (
+            [6] => Array
+                (
+                    [0] => -
+                    [1] => np
+                    [2] => curse
+                )
+
+        )
+
+    [hughplayer] => Array
+        (
+            [6] => Array
+                (
+                    [0] => DEN
+                    [1] => lo
+                    [2] => bless
+                )
+
+        )
+
+    [silkplayer] => Array
+        (
+            [6] => Array
+                (
+                    [0] => -
+                    [1] => np
+                    [2] => curse
+                )
+
+        )
+
+    [woolplayer] => Array
+        (
+            [6] => Array
+                (
+                    [0] => -
+                    [1] => np
+                    [2] => curse
+                )
+
+        )
+
+)
+:C:\xampp\htdocs\nflx\support_ko_last_man3.php.  2016-08-13T15:36:02-07:00
+444 after cals, a_player: 

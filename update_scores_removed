@@ -1,0 +1,332 @@
+<?php
+require_once 'mypicks_startsession.php';
+
+/*
+:mode=php:
+
+   file: update_scores.php
+   date: aug-2016
+ author: hfs
+   desc: Interface to http://www.nfl.com/liveupdate/scores/scores.json.
+      The previous guy coded most of it.
+      An example of the array returned is contained at the end of this file.
+      
+   referencetemplate: us
+*/
+
+require_once 'mypicks_def.php';
+require_once 'site_fns_diminished.php';
+require_once 'mypicks_db.php';
+require_once 'mypicks_phpgeneral.php';
+
+validateUser('admin');
+
+ini_set("allow_url_fopen", 1);
+
+$mysql = "
+      UPDATE schedules 
+        SET homescore = ?,
+            awayscore = ? 
+      WHERE DATE_FORMAT(gametime, '%Y%m%d') = ?
+        AND home = ?
+        AND away = ?";
+        
+$ans = '';
+$scores_array = '';
+$jason = '';
+$msg = '';
+$sth = '';
+$records = sprintf("%-10s %-6s %-6s %-6s %-6s %-6s      %-20s<br />", 'date', 'home', 'away', 'hscore', 'ascore', 'status', 'updates');
+$processing_error = false;
+$status = false;
+while (1) {
+   
+   writeDataToFile("45 update_scores:  starting the while loop now", __FILE__, __LINE__);
+      
+   if (($json = file_get_contents('http://www.nfl.com/liveupdate/scores/scores.json'))===false){
+      formatSessionMessage("The site http://www.nfl.com/liveupdate/scores/scores.json has reported a failure.  Please try again later", 'info', $msg, 'us-47');
+      setSessionMessage($msg);
+      break;
+   } else {
+      $scores_array = json_decode($json, true);
+   }
+   
+   
+   writeDataToFile("56 update_scores:  starting the while loop now" . print_r($scores_array, true), __FILE__, __LINE__);
+
+   if (!$conn = db_connect()) {
+      $error = '';
+      if (isset($conn->error)) {
+         $error = $conn->error;
+      }
+      formatSessionMessage("dberror", 'danger', $msg, "us-62 $error");
+      setSessionMessage($msg, 'error');
+      break;
+   }
+   
+   if (@!$sth = $conn->prepare($mysql)) { 
+      $error = '';
+      if (isset($sth->error)) {
+         $error = $sth->error;
+      } else if (isset($conn->error)) {
+         $error = $conn->error;
+      }
+      formatSessionMessage("runSql() prepare() error", 'danger', $msg, "us-74 $error");
+      setSessionMessage($msg, 'error');
+      $ref_status_text = 'dberror';
+      (!empty($sth) && @$sth->close());
+      @$conn->close();
+      return false;
+   }
+   
+   
+   writeDataToFile("83 update_scores:  starting the while loop now", __FILE__, __LINE__);
+   $processing_error = false;
+   foreach ($scores_array as $key => $value) {
+         $j_date        = substr($key, 0, -2);
+         $j_home        = $value['home']['abbr'];
+         $j_away        = $value['away']['abbr'];
+         $j_homescore   = $value['home']['score']['T'];
+         $j_awayscore   = $value['away']['score']['T'];
+         $j_quarter     = $value['qtr'];
+         
+         // $isanull = 'not null';
+         // if ($j_homescore === null) {
+         //    $isanull = 'is null';  
+         // }
+         // $isfalse = 'not false';
+         // if ($j_homescore === null) {
+         //    $isfalse = 'is false';  
+         // }
+         // $isset = 'not set';
+         // if (isset($j_homescore)) {
+         //    $isset = 'is set';  
+         // }
+         // $isempty = 'not empty';
+         // if ($j_homescore == '') {
+         //    $isempty = 'is empty';  
+         // }
+         // $isemptystr = 'not empty string';
+         // if ($j_homescore === '') {
+         //    $isemptystr = 'is empty string';  
+         // }
+         // 
+         // writeDataToFile(" 
+         //                   $j_date     
+         //                   $j_home     
+         //                   $j_away     
+         //                   $j_homescore
+         //                   $j_awayscore
+         //                   home score is $isanull, $isfalse, $isset, $isempty, $isemptystr, $", __FILE__, __LINE__);
+         
+      if ($processing_error) {
+         break;
+      }
+      if ($j_quarter != 'Final') {
+         continue;
+      }
+      
+      writeDataToFile("binding '$j_homescore',  '$j_awayscore', '$j_date', '$j_home', '$j_away' '$j_quarter'", __FILE__, __LINE__);
+      
+      $records .= sprintf("%-10s %-6s %-6s %-6s %-6s %-6s",$j_date, $j_home, $j_away, $j_homescore, $j_awayscore, $j_quarter);
+      
+      if (!$sth->bind_param("iisss",   $j_homescore,      
+                                       $j_awayscore,
+                                       $j_date,        
+                                       $j_home, 
+                                       $j_away)) {
+         $error = '';
+         if (isset($sth->error)) {
+            $error = $sth->error;
+         } else if (isset($conn->error)) {
+            $error = $conn->error;
+         }
+         formatSessionMessage("dberror", 'danger', $msg, "us-144 $error");
+         setSessionMessage($msg, 'error');
+         $ref_status_text = 'dberror';
+         (!empty($sth) && @$sth->close());
+         @$conn->close();
+         $processing_error = true;
+         break;
+      }
+   
+      $ans = $sth->execute();
+      if ($ans === false) {
+         $error = '';
+         if (isset($sth->error)) {
+            $error = $sth->error;
+         } else if (isset($conn->error)) {
+            $error = $conn->error;
+         }
+         formatSessionMessage("dberror", 'danger', $msg, "us-161 $error");
+         setSessionMessage($msg, 'error');
+         $ref_status_text = 'dberror';
+         (!empty($sth) && @$sth->close());
+         @$conn->close();
+         $processing_error = true;
+         break;
+      }
+      
+      $rows_updated = $sth->affected_rows;
+      
+      if ($rows_updated > 1) {
+         formatSessionMessage("More than one schedule record was updated for date '$j_date', home '$j_home', and away '$j_away'.  There were $rows_updated updates made.", 'warning', $msg, "us-173 $rows_updated");
+         setSessionMessage($msg, 'error');
+         $updates_made = true;
+         $records = sprintf("%s  ..  %s <br />", $records, 'MULTIPLE UPDATEs MADE');
+      } elseif ($rows_updated == 1) {
+         $updates_made = true;
+         $records = sprintf("%s ...  %s <br />", $records, 'SINGLE UPDATE MADE');
+      }  elseif ($$rows_updated == 0) {
+         $records = sprintf("%s ...  %s <br />", $records, 'NO UPDATES MADE');
+      }
+      
+   writeDataToFile("146  end for each $j_date, $j_home, $j_away, $rows_updated", __FILE__, __LINE__);
+      
+      
+   }  // END foreach jason
+   $status = true;
+   break;
+}  // END main error frame
+
+if ($updates_made) {
+   formatSessionMessage("Updates were made.", 'info', $msg, "us-193");
+   setSessionMessage($msg, 'error');
+} else {
+   formatSessionMessage("No updates were made.", 'info', $msg, "us-196");
+   setSessionMessage($msg, 'error');
+}
+
+if ($records) {
+   formatSessionMessage("The following schedule records were checked:\n <pre>$records</pre>", 'info', $msg, "us-201");
+   setSessionMessage($msg, 'error');
+}
+   
+
+header('Location: admin.php');
+die();
+
+do_footer('clean');
+
+/*  Example of the data returned
+stdClass Object
+(
+    [2016082551] => stdClass Object
+        (
+            [home] => stdClass Object
+                (
+                    [score] => stdClass Object
+                        (
+                            [1] => 0
+                            [2] => 7
+                            [3] => 10
+                            [4] => 0
+                            [5] => 0
+                            [T] => 17
+                        )
+
+                    [abbr] => MIA
+                    [to] => 2
+                )
+
+            [away] => stdClass Object
+                (
+                    [score] => stdClass Object
+                        (
+                            [1] => 0
+                            [2] => 3
+                            [3] => 3
+                            [4] => 0
+                            [5] => 0
+                            [T] => 6
+                        )
+
+                    [abbr] => ATL
+                    [to] => 1
+                )
+
+            [bp] => 12
+            [down] => 0
+            [togo] => 0
+            [clock] => 00:32
+            [posteam] => MIA
+            [note] => 
+            [redzone] => 
+            [stadium] => Camping World Stadium
+            [media] => stdClass Object
+                (
+                    [radio] => stdClass Object
+                        (
+                            [home] => 
+                            [away] => 
+                        )
+
+                    [tv] => NBC
+                    [sat] => 
+                    [sathd] => 
+                )
+
+            [yl] => 
+            [qtr] => Final
+        )
+
+    [2016082552] => stdClass Object
+        (
+            [home] => stdClass Object
+                (
+                    [score] => stdClass Object
+                        (
+                            [1] => 0
+                            [2] => 10
+                            [3] => 17
+                            [4] => 0
+                            [5] => 0
+                            [T] => 27
+                        )
+
+                    [abbr] => SEA
+                    [to] => 1
+                )
+
+            [away] => stdClass Object
+                (
+                    [score] => stdClass Object
+                        (
+                            [1] => 7
+                            [2] => 3
+                            [3] => 0
+                            [4] => 7
+                            [5] => 0
+                            [T] => 17
+                        )
+
+                    [abbr] => DAL
+                    [to] => 0
+                )
+
+            [bp] => 8
+            [down] => 0
+            [togo] => 0
+            [clock] => 00:16
+            [posteam] => DAL
+            [note] => 
+            [redzone] => 
+            [stadium] => CenturyLink Field
+            [media] => stdClass Object
+                (
+                    [radio] => stdClass Object
+                        (
+                            [home] => 
+                            [away] => 
+                        )
+
+                    [tv] => NFL NETWORK
+                    [sat] => 
+                    [sathd] => 
+                )
+
+            [yl] => 
+            [qtr] => Final
+        )
+*/
+?>

@@ -1,0 +1,272 @@
+/* Additional CSS stylesheet for Mysuperpicks.com */
+
+body {
+  margin-bottom: 50px;
+}
+
+#home_page {
+  padding-top: 50px;
+  margin-top: 50px;
+  text-align: center;
+  color: #686868;
+  width: 100%;
+  height: 250px;
+  background: url('../images/MySuperPicks0103_2.jpg') no-repeat center center;
+  background-size: 100% auto;
+}
+#logo_title {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+}
+
+.footer {
+  background-color: #222;
+  border-color: #080808;
+  color: #cfcfcf;
+  margin-left: 0;
+}
+
+.footer a,
+.footer a:visited {
+  color: #686868;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.input-small {
+  width: 150px;
+}
+
+#admin_login {
+  color: #000;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.container > .navbar-collapse > ul {
+  margin-right: 50px;
+}
+
+.container > .navbar-collapse > ul > li.active {
+  background-color: #686868;
+}
+
+#front_button a,
+#front_button a:visited {
+  color: #fff;
+}
+
+#admin_button a,
+#admin_button a:visited {
+  color: #fff;
+}
+
+#single_weekly table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 800%;
+}
+#single_weekly table tr td a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+#IDtable_singleWeek table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 800%;
+}
+#IDtable_singleSeason table tr td a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.Ctd_weeklyPicks {
+  white-space: nowrap;
+  padding-left: 20px;
+  padding-right: 10px;
+  word-spacing: 10px;
+  font-family: Lucida Console;
+}
+.Ctr_weekly {
+  border-style: solid;
+  border-width: 1px;
+  border-color: LightGrey;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.Ctd_numbers {
+  padding-left: 5px;
+  padding-right: 20px;
+}
+
+td a,
+td a:hover {
+  text-decoration: none;
+}
+#welcome {
+  font-size: 12px;
+  margin-left: 20px;
+}
+.tooltip-inner {
+  max-width: 400px;
+  padding: 8px 13px;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  background-color: #000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.comment {
+  margin-left: 100px;
+}
+
+#single table tr td a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
+/* hugh stuff */
+.mymistyrose {
+  background-color: mistyrose;
+}
+.gamestarted {
+  background-color: MistyRose;
+}
+.dobreaks {
+  white-space: pre;
+}
+
+/* ko last man */
+
+.player_bless_lo {
+  background-color: yellow;
+  color: red;
+}
+.player_curse_wi {
+  color: blue;
+}
+.player_curse_lo {
+  color: red;
+}
+.player_curse_ip {
+  color: green;
+}
+.player_curse_sc {
+  color: black;
+}
+.player_curse_np {
+  color: black;
+}
+.player_win {
+  color: blue;
+  font-weight: bold;
+}
+
+.table .subhead {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.scoreboardWrapper {
+  position: relative;
+}
+.scoreboardWrapper .scoreboard {
+  position: absolute;
+  top: -26px;
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.scoreboardWrapper .scoreboard > div {
+  float: left;
+  color: #333;
+  padding-left: 8px;
+}
+
+.scoreboardWrapper .scoreboard > div > .score {
+  font-weight: bold;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.scoreboardWrapper .scoreboard > div:nth-child(1n + 3) {
+  border-left: 1px solid #333;
+}
+
+@media (min-width: 768px) {
+  .maincontent {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .nav form {
+    color: #9d9d9d;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    right: 0;
+  }
+  .navbar-brand {
+    height: auto;
+  }
+
+  .navbar > .container {
+    margin-right: 30px;
+  }
+  .navbar-nav {
+    margin-left: -30px;
+  }
+  #welcome {
+    display: block;
+    margin-left: 0;
+  }
+
+  #home_page {
+    margin-top: 0;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+  .navbar {
+    max-height: 100%;
+  }
+}
+
+#loginModal h4 {
+  float: left;
+}
+
+.pickembutton,
+.pickskobutton {
+  width: 107px;
+  height: 29px;
+}
+
+.pickemtable,
+.pickskotable {
+  width:70%;
+}
+
+.pickemgametime,
+.pickskogametime {
+  width: 45%;
+}

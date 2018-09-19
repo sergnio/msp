@@ -1,0 +1,27 @@
+<?php
+require_once 'mypicks_startsession.php';
+
+ini_set("allow_url_fopen", 1);
+require_once('mypicks_def.php');
+require_once('site_fns_diminished.php');
+
+// http://riccomini.name/posts/game-time-baby/2012-09-29-streaming-live-sports-schedule-scores-stats-api/
+// http://www.nfl.com/liveupdate/scorestrip/scorestrip.json
+// http://scores.nbcsports.msnbc.com/ticker/data/gamesMSNBC.js.asp?jsonp=true&sport=MLB&period=20120929
+
+if (($json = file_get_contents('http://www.nfl.com/liveupdate/scores/scores.json'))===false){
+   exit;
+} else {
+   $array = json_decode($json);
+   foreach($array as $key=>$value) {
+      $date = substr($key, 0, -2);
+      $home = $value->home->abbr;
+      $away = $value->away->abbr;
+      $homescore = $value->home->score->T;
+      $awayscore = $value->away->score->T;
+      $conn = db_connect();
+      $result = $conn->query("UPDATE schedules SET homescore='$homescore',awayscore='$awayscore' WHERE DATE_FORMAT(gametime, '%Y%m%d')='$date' AND home='$home' AND away='$away'");
+   }
+}
+exit;
+?>

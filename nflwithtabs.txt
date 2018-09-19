@@ -1,0 +1,323 @@
+ Week 1
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Sep 8 	8:30 pm 	 Carolina Panthers 	 Denver Broncos
+ Sun Sep 11 	1:00 pm 	 Buffalo Bills 	 Baltimore Ravens
+  	1:00 pm 	 Chicago Bears 	 Houston Texans
+  	1:00 pm 	 Cincinnati Bengals 	 New York Jets
+  	1:00 pm 	 Cleveland Browns 	 Philadelphia Eagles
+  	1:00 pm 	 Green Bay Packers 	 Jacksonville Jaguars
+  	1:00 pm 	 Minnesota Vikings 	 Tennessee Titans
+  	1:00 pm 	 Oakland Raiders 	 New Orleans Saints
+  	1:00 pm 	 San Diego Chargers 	 Kansas City Chiefs
+  	1:00 pm 	 Tampa Bay Buccaneers 	 Atlanta Falcons
+  	4:05 pm 	 Miami Dolphins 	 Seattle Seahawks
+  	4:25 pm 	 Detroit Lions 	 Indianapolis Colts
+  	4:25 pm 	 New York Giants 	 Dallas Cowboys
+  	8:30 pm 	 New England Patriots 	 Arizona Cardinals
+ Mon Sep 12 	7:10 pm 	 Pittsburgh Steelers 	 Washington Redskins
+  	10:20 pm 	 Los Angeles Rams 	 San Francisco 49ers
+  Week 2
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Sep 15 	8:25 pm 	 New York Jets 	 Buffalo Bills
+ Sun Sep 18 	1:00 pm 	 Baltimore Ravens 	 Cleveland Browns
+  	1:00 pm 	 Cincinnati Bengals 	 Pittsburgh Steelers
+  	1:00 pm 	 Dallas Cowboys 	 Washington Redskins
+  	1:00 pm 	 Kansas City Chiefs 	 Houston Texans
+  	1:00 pm 	 Miami Dolphins 	 New England Patriots
+  	1:00 pm 	 New Orleans Saints 	 New York Giants
+  	1:00 pm 	 San Francisco 49ers 	 Carolina Panthers
+  	1:00 pm 	 Tennessee Titans 	 Detroit Lions
+  	4:05 pm 	 Seattle Seahawks 	 Los Angeles Rams
+  	4:05 pm 	 Tampa Bay Buccaneers 	 Arizona Cardinals
+  	4:25 pm 	 Atlanta Falcons 	 Oakland Raiders
+  	4:25 pm 	 Indianapolis Colts 	 Denver Broncos
+  	4:25 pm 	 Jacksonville Jaguars 	 San Diego Chargers
+  	8:30 pm 	 Green Bay Packers 	 Minnesota Vikings
+ Mon Sep 19 	8:30 pm 	 Philadelphia Eagles 	 Chicago Bears
+  Week 3
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Sep 22 	8:25 pm 	 Houston Texans 	 New England Patriots
+ Sun Sep 25 	1:00 pm 	 Arizona Cardinals 	 Buffalo Bills
+  	1:00 pm 	 Baltimore Ravens 	 Jacksonville Jaguars
+  	1:00 pm 	 Cleveland Browns 	 Miami Dolphins
+  	1:00 pm 	 Denver Broncos 	 Cincinnati Bengals
+  	1:00 pm 	 Detroit Lions 	 Green Bay Packers
+  	1:00 pm 	 Minnesota Vikings 	 Carolina Panthers
+  	1:00 pm 	 Oakland Raiders 	 Tennessee Titans
+  	1:00 pm 	 Washington Redskins 	 New York Giants
+  	4:05 pm 	 Los Angeles Rams 	 Tampa Bay Buccaneers
+  	4:05 pm 	 San Francisco 49ers 	 Seattle Seahawks
+  	4:25 pm 	 New York Jets 	 Kansas City Chiefs
+  	4:25 pm 	 Pittsburgh Steelers 	 Philadelphia Eagles
+  	4:25 pm 	 San Diego Chargers 	 Indianapolis Colts
+  	8:30 pm 	 Chicago Bears 	 Dallas Cowboys
+ Mon Sep 26 	8:30 pm 	 Atlanta Falcons 	 New Orleans Saints
+  Week 4
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Sep 29 	8:25 pm 	 Miami Dolphins 	 Cincinnati Bengals
+ Sun Oct 2 	9:30 am 	 Indianapolis Colts 	 Jacksonville Jaguars ¹
+  	1:00 pm 	 Buffalo Bills 	 New England Patriots
+  	1:00 pm 	 Carolina Panthers 	 Atlanta Falcons
+  	1:00 pm 	 Cleveland Browns 	 Washington Redskins
+  	1:00 pm 	 Detroit Lions 	 Chicago Bears
+  	1:00 pm 	 Oakland Raiders 	 Baltimore Ravens
+  	1:00 pm 	 Seattle Seahawks 	 New York Jets
+  	1:00 pm 	 Tennessee Titans 	 Houston Texans
+  	4:05 pm 	 Denver Broncos 	 Tampa Bay Buccaneers
+  	4:25 pm 	 Dallas Cowboys 	 San Francisco 49ers
+  	4:25 pm 	 Los Angeles Rams 	 Arizona Cardinals
+  	4:25 pm 	 New Orleans Saints 	 San Diego Chargers
+  	8:30 pm 	 Kansas City Chiefs 	 Pittsburgh Steelers
+ Mon Oct 3 	8:30 pm 	 New York Giants 	 Minnesota Vikings
+
+ ¹ This game is being played in London, England.
+
+ Bye: Green Bay, Philadelphia
+
+  Week 5
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Oct 6 	8:25 pm 	 Arizona Cardinals 	 San Francisco 49ers
+ Sun Oct 9 	1:00 pm 	 Chicago Bears 	 Indianapolis Colts
+  	1:00 pm 	 Houston Texans 	 Minnesota Vikings
+  	1:00 pm 	 New England Patriots 	 Cleveland Browns
+  	1:00 pm 	 New York Jets 	 Pittsburgh Steelers
+  	1:00 pm 	 Philadelphia Eagles 	 Detroit Lions
+  	1:00 pm 	 Tennessee Titans 	 Miami Dolphins
+  	1:00 pm 	 Washington Redskins 	 Baltimore Ravens
+  	4:05 pm 	 Atlanta Falcons 	 Denver Broncos
+  	4:25 pm 	 Buffalo Bills 	 Los Angeles Rams
+  	4:25 pm 	 Cincinnati Bengals 	 Dallas Cowboys
+  	4:25 pm 	 San Diego Chargers 	 Oakland Raiders
+  	8:30 pm 	 New York Giants 	 Green Bay Packers
+ Mon Oct 10 	8:30 pm 	 Tampa Bay Buccaneers 	 Carolina Panthers
+
+ Bye: Jacksonville, Kansas City, New Orleans, Seattle
+
+  Week 6
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Oct 13 	8:25 pm 	 Denver Broncos 	 San Diego Chargers
+ Sun Oct 16 	1:00 pm 	 Baltimore Ravens 	 New York Giants
+  	1:00 pm 	 Carolina Panthers 	 New Orleans Saints
+  	1:00 pm 	 Cincinnati Bengals 	 New England Patriots
+  	1:00 pm 	 Cleveland Browns 	 Tennessee Titans
+  	1:00 pm 	 Jacksonville Jaguars 	 Chicago Bears
+  	1:00 pm 	 Los Angeles Rams 	 Detroit Lions
+  	1:00 pm 	 Philadelphia Eagles 	 Washington Redskins
+  	1:00 pm 	 Pittsburgh Steelers 	 Miami Dolphins
+  	1:00 pm 	 San Francisco 49ers 	 Buffalo Bills
+  	4:05 pm 	 Kansas City Chiefs 	 Oakland Raiders
+  	4:25 pm 	 Atlanta Falcons 	 Seattle Seahawks
+  	4:25 pm 	 Dallas Cowboys 	 Green Bay Packers
+  	8:30 pm 	 Indianapolis Colts 	 Houston Texans
+ Mon Oct 17 	8:30 pm 	 New York Jets 	 Arizona Cardinals
+
+ Bye: Minnesota, Tampa Bay
+
+  Week 7
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Oct 20 	8:25 pm 	 Chicago Bears 	 Green Bay Packers
+ Sun Oct 23 	9:30 am 	 New York Giants 	 Los Angeles Rams ¹
+  	1:00 pm 	 Baltimore Ravens 	 New York Jets
+  	1:00 pm 	 Buffalo Bills 	 Miami Dolphins
+  	1:00 pm 	 Cleveland Browns 	 Cincinnati Bengals
+  	1:00 pm 	 Indianapolis Colts 	 Tennessee Titans
+  	1:00 pm 	 Minnesota Vikings 	 Philadelphia Eagles
+  	1:00 pm 	 New Orleans Saints 	 Kansas City Chiefs
+  	1:00 pm 	 Oakland Raiders 	 Jacksonville Jaguars
+  	1:00 pm 	 Washington Redskins 	 Detroit Lions
+  	4:05 pm 	 San Diego Chargers 	 Atlanta Falcons
+  	4:05 pm 	 Tampa Bay Buccaneers 	 San Francisco 49ers
+  	4:25 pm 	 New England Patriots 	 Pittsburgh Steelers
+  	8:30 pm 	 Seattle Seahawks 	 Arizona Cardinals
+ Mon Oct 24 	8:30 pm 	 Houston Texans 	 Denver Broncos
+
+ ¹ This game is being played in London, England.
+
+ Bye: Carolina, Dallas
+
+  Week 8
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Oct 27 	8:25 pm 	 Jacksonville Jaguars 	 Tennessee Titans
+ Sun Oct 30 	9:30 am 	 Washington Redskins 	 Cincinnati Bengals ¹
+  	1:00 pm 	 Detroit Lions 	 Houston Texans
+  	1:00 pm 	 Green Bay Packers 	 Atlanta Falcons
+  	1:00 pm 	 Kansas City Chiefs 	 Indianapolis Colts
+  	1:00 pm 	 New England Patriots 	 Buffalo Bills
+  	1:00 pm 	 New York Jets 	 Cleveland Browns
+  	1:00 pm 	 Oakland Raiders 	 Tampa Bay Buccaneers
+  	1:00 pm 	 Seattle Seahawks 	 New Orleans Saints
+  	4:05 pm 	 San Diego Chargers 	 Denver Broncos
+  	4:25 pm 	 Arizona Cardinals 	 Carolina Panthers
+  	8:30 pm 	 Philadelphia Eagles 	 Dallas Cowboys
+ Mon Oct 31 	8:30 pm 	 Minnesota Vikings 	 Chicago Bears
+
+ ¹ This game is being played in London, England.
+
+ Bye: Baltimore, Los Angeles, Miami, N.Y. Giants, Pittsburgh, San Francisco
+
+  Week 9
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Nov 3 	8:25 pm 	 Atlanta Falcons 	 Tampa Bay Buccaneers
+ Sun Nov 6 	1:00 pm 	 Dallas Cowboys 	 Cleveland Browns
+  	1:00 pm 	 Detroit Lions 	 Minnesota Vikings
+  	1:00 pm 	 Jacksonville Jaguars 	 Kansas City Chiefs
+  	1:00 pm 	 New York Jets 	 Miami Dolphins
+  	1:00 pm 	 Philadelphia Eagles 	 New York Giants
+  	1:00 pm 	 Pittsburgh Steelers 	 Baltimore Ravens
+  	4:05 pm 	 Carolina Panthers 	 Los Angeles Rams
+  	4:05 pm 	 New Orleans Saints 	 San Francisco 49ers
+  	4:25 pm 	 Indianapolis Colts 	 Green Bay Packers
+  	4:25 pm 	 Tennessee Titans 	 San Diego Chargers
+  	8:30 pm 	 Denver Broncos 	 Oakland Raiders
+ Mon Nov 7 	8:30 pm 	 Buffalo Bills 	 Seattle Seahawks
+
+ Bye: Arizona, Chicago, Cincinnati, Houston, New England, Washington
+
+  Week 10
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Nov 10 	8:25 pm 	 Cleveland Browns 	 Baltimore Ravens
+ Sun Nov 13 	1:00 pm 	 Atlanta Falcons 	 Philadelphia Eagles
+  	1:00 pm 	 Chicago Bears 	 Tampa Bay Buccaneers
+  	1:00 pm 	 Denver Broncos 	 New Orleans Saints
+  	1:00 pm 	 Green Bay Packers 	 Tennessee Titans
+  	1:00 pm 	 Houston Texans 	 Jacksonville Jaguars
+  	1:00 pm 	 Kansas City Chiefs 	 Carolina Panthers
+  	1:00 pm 	 Los Angeles Rams 	 New York Jets
+  	1:00 pm 	 Minnesota Vikings 	 Washington Redskins
+  	4:05 pm 	 Miami Dolphins 	 San Diego Chargers
+  	4:25 pm 	 Dallas Cowboys 	 Pittsburgh Steelers
+  	4:25 pm 	 San Francisco 49ers 	 Arizona Cardinals
+  	8:30 pm 	 Seattle Seahawks 	 New England Patriots
+ Mon Nov 14 	8:30 pm 	 Cincinnati Bengals 	 New York Giants
+
+ Bye: Buffalo, Detroit, Indianapolis, Oakland
+
+  Week 11
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Nov 17 	8:25 pm 	 New Orleans Saints 	 Carolina Panthers
+ Sun Nov 20 	1:00 pm 	 Arizona Cardinals 	 Minnesota Vikings
+  	1:00 pm 	 Baltimore Ravens 	 Dallas Cowboys
+  	1:00 pm 	 Buffalo Bills 	 Cincinnati Bengals
+  	1:00 pm 	 Chicago Bears 	 New York Giants
+  	1:00 pm 	 Jacksonville Jaguars 	 Detroit Lions
+  	1:00 pm 	 Pittsburgh Steelers 	 Cleveland Browns
+  	1:00 pm 	 Tampa Bay Buccaneers 	 Kansas City Chiefs
+  	1:00 pm 	 Tennessee Titans 	 Indianapolis Colts
+  	4:05 pm 	 Miami Dolphins 	 Los Angeles Rams
+  	4:25 pm 	 New England Patriots 	 San Francisco 49ers
+  	4:25 pm 	 Philadelphia Eagles 	 Seattle Seahawks
+  	8:30 pm 	 Green Bay Packers 	 Washington Redskins
+ Mon Nov 21 	8:30 pm 	 Houston Texans 	 Oakland Raiders
+
+ Bye: Atlanta, Denver, N.Y. Jets, San Diego
+
+  Week 12
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Nov 24 	12:30 pm 	 Minnesota Vikings 	 Detroit Lions
+  	4:30 pm 	 Washington Redskins 	 Dallas Cowboys
+  	8:30 pm 	 Pittsburgh Steelers 	 Indianapolis Colts
+ Sun Nov 27 	1:00 pm 	 Arizona Cardinals 	 Atlanta Falcons
+  	1:00 pm 	 Cincinnati Bengals 	 Baltimore Ravens
+  	1:00 pm 	 Jacksonville Jaguars 	 Buffalo Bills
+  	1:00 pm 	 Los Angeles Rams 	 New Orleans Saints
+  	1:00 pm 	 New York Giants 	 Cleveland Browns
+  	1:00 pm 	 San Diego Chargers 	 Houston Texans
+  	1:00 pm 	 San Francisco 49ers 	 Miami Dolphins
+  	1:00 pm 	 Tennessee Titans 	 Chicago Bears
+  	4:05 pm 	 Seattle Seahawks 	 Tampa Bay Buccaneers
+  	4:25 pm 	 Carolina Panthers 	 Oakland Raiders
+  	4:25 pm 	 Kansas City Chiefs 	 Denver Broncos
+  	8:30 pm 	 New England Patriots 	 New York Jets
+ Mon Nov 28 	8:30 pm 	 Green Bay Packers 	 Philadelphia Eagles
+  Week 13
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Dec 1 	8:25 pm 	 Dallas Cowboys 	 Minnesota Vikings
+ Sun Dec 4 	1:00 pm 	 Denver Broncos 	 Jacksonville Jaguars
+  	1:00 pm 	 Detroit Lions 	 New Orleans Saints
+  	1:00 pm 	 Houston Texans 	 Green Bay Packers
+  	1:00 pm 	 Kansas City Chiefs 	 Atlanta Falcons
+  	1:00 pm 	 Los Angeles Rams 	 New England Patriots
+  	1:00 pm 	 Miami Dolphins 	 Baltimore Ravens
+  	1:00 pm 	 Philadelphia Eagles 	 Cincinnati Bengals
+  	1:00 pm 	 San Francisco 49ers 	 Chicago Bears
+  	4:05 pm 	 Buffalo Bills 	 Oakland Raiders
+  	4:25 pm 	 New York Giants 	 Pittsburgh Steelers
+  	4:25 pm 	 Tampa Bay Buccaneers 	 San Diego Chargers
+  	4:25 pm 	 Washington Redskins 	 Arizona Cardinals
+  	8:30 pm 	 Carolina Panthers 	 Seattle Seahawks
+ Mon Dec 5 	8:30 pm 	 Indianapolis Colts 	 New York Jets
+
+ Bye: Cleveland, Tennessee
+
+  Week 14
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Dec 8 	8:25 pm 	 Oakland Raiders 	 Kansas City Chiefs
+ Sun Dec 11 	1:00 pm 	 Arizona Cardinals 	 Miami Dolphins
+  	1:00 pm 	 Chicago Bears 	 Detroit Lions
+  	1:00 pm 	 Cincinnati Bengals 	 Cleveland Browns
+  	1:00 pm 	 Denver Broncos 	 Tennessee Titans
+  	1:00 pm 	 Houston Texans 	 Indianapolis Colts
+  	1:00 pm 	 Minnesota Vikings 	 Jacksonville Jaguars
+  	1:00 pm 	 New Orleans Saints 	 Tampa Bay Buccaneers
+  	1:00 pm 	 Pittsburgh Steelers 	 Buffalo Bills
+  	1:00 pm 	 San Diego Chargers 	 Carolina Panthers
+  	1:00 pm 	 Washington Redskins 	 Philadelphia Eagles
+  	4:05 pm 	 New York Jets 	 San Francisco 49ers
+  	4:25 pm 	 Atlanta Falcons 	 Los Angeles Rams
+  	4:25 pm 	 Seattle Seahawks 	 Green Bay Packers
+  	8:30 pm 	 Dallas Cowboys 	 New York Giants
+ Mon Dec 12 	8:30 pm 	 Baltimore Ravens 	 New England Patriots
+  Week 15
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Dec 15 	8:25 pm 	 Los Angeles Rams 	 Seattle Seahawks
+ Sat Dec 17 	8:25 pm 	 Miami Dolphins 	 New York Jets
+ Sun Dec 18 	1:00 pm 	 Cleveland Browns 	 Buffalo Bills
+  	1:00 pm 	 Detroit Lions 	 New York Giants
+  	1:00 pm 	 Green Bay Packers 	 Chicago Bears
+  	1:00 pm 	 Indianapolis Colts 	 Minnesota Vikings
+  	1:00 pm 	 Jacksonville Jaguars 	 Houston Texans
+  	1:00 pm 	 Philadelphia Eagles 	 Baltimore Ravens
+  	1:00 pm 	 Tampa Bay Buccaneers 	 Dallas Cowboys
+  	1:00 pm 	 Tennessee Titans 	 Kansas City Chiefs
+  	4:05 pm 	 New Orleans Saints 	 Arizona Cardinals
+  	4:05 pm 	 San Francisco 49ers 	 Atlanta Falcons
+  	4:25 pm 	 New England Patriots 	 Denver Broncos
+  	4:25 pm 	 Oakland Raiders 	 San Diego Chargers
+  	8:30 pm 	 Pittsburgh Steelers 	 Cincinnati Bengals
+ Mon Dec 19 	8:30 pm 	 Carolina Panthers 	 Washington Redskins
+  Week 16
+ Date	Time (ET)	 Away Team	 Home Team
+ Thu Dec 22 	8:25 pm 	 New York Giants 	 Philadelphia Eagles
+ Sat Dec 24 	1:00 pm 	 Atlanta Falcons 	 Carolina Panthers
+  	1:00 pm 	 Miami Dolphins 	 Buffalo Bills
+  	1:00 pm 	 Minnesota Vikings 	 Green Bay Packers
+  	1:00 pm 	 New York Jets 	 New England Patriots
+  	1:00 pm 	 San Diego Chargers 	 Cleveland Browns
+  	1:00 pm 	 Tampa Bay Buccaneers 	 New Orleans Saints
+  	1:00 pm 	 Tennessee Titans 	 Jacksonville Jaguars
+  	1:00 pm 	 Washington Redskins 	 Chicago Bears
+  	4:05 pm 	 Indianapolis Colts 	 Oakland Raiders
+  	4:25 pm 	 Arizona Cardinals 	 Seattle Seahawks
+  	4:25 pm 	 San Francisco 49ers 	 Los Angeles Rams
+  	8:25 pm 	 Cincinnati Bengals 	 Houston Texans
+ Sun Dec 25 	4:30 pm 	 Baltimore Ravens 	 Pittsburgh Steelers
+  	8:30 pm 	 Denver Broncos 	 Kansas City Chiefs
+ Mon Dec 26 	8:30 pm 	 Detroit Lions 	 Dallas Cowboys
+  Week 17
+ Date	Time (ET)	 Away Team	 Home Team
+ Sun Jan 1 	1:00 pm 	 Baltimore Ravens 	 Cincinnati Bengals
+  	1:00 pm 	 Buffalo Bills 	 New York Jets
+  	1:00 pm 	 Carolina Panthers 	 Tampa Bay Buccaneers
+  	1:00 pm 	 Chicago Bears 	 Minnesota Vikings
+  	1:00 pm 	 Cleveland Browns 	 Pittsburgh Steelers
+  	1:00 pm 	 Dallas Cowboys 	 Philadelphia Eagles
+  	1:00 pm 	 Green Bay Packers 	 Detroit Lions
+  	1:00 pm 	 Houston Texans 	 Tennessee Titans
+  	1:00 pm 	 Jacksonville Jaguars 	 Indianapolis Colts
+  	1:00 pm 	 New England Patriots 	 Miami Dolphins
+  	1:00 pm 	 New Orleans Saints 	 Atlanta Falcons
+  	1:00 pm 	 New York Giants 	 Washington Redskins
+  	4:25 pm 	 Arizona Cardinals 	 Los Angeles Rams
+  	4:25 pm 	 Kansas City Chiefs 	 San Diego Chargers
+  	4:25 pm 	 Oakland Raiders 	 Denver Broncos
+  	4:25 pm 	 Seattle Seahawks 	 San Francisco 49ers

@@ -74,7 +74,7 @@ echo "<p class=\"lead muted text-center\"><small>To enter picks press the desire
         $(\"[rel='tooltip']\").tooltip();
     });
 </script>";
-      echo "<h3>This Week's Lines <span style='font-size: 14px;'> (Please pick $league_picks team to win)</span></h3>";
+      echo "<h3>This Week's Lines <span style='font-size: 14px;'> Please pick $league_picks team to win</span></h3>";
       //get_ko_cohort_public_picks($week,$user_id, $league_id);
       echoKOCohortPublicPicks($user_id, $active_week, $league_id, $league_type, $odds_in_use);
       echo "<br /><br /><br /><br />";
@@ -135,13 +135,13 @@ function echoKOCohortPublicPicks(
    $stable .= "<table id=\"single\" class=\"table table-hover table-responsive pickskotable\">\n";
    $stable .= "   <thead>\n";
    $stable .= "      <tr>\n";
-   $stable .= "         <th id='IDh_gametime'>Game Time <br />
+   $stable .= "         <th id='IDh_gametime' class='text-center'>Game Time <br />
       &nbsp;&nbsp;&nbsp;&nbsp;<input type='radio' id='IDi_tzp' name='tz' value='p' adj='0' $p_checked > Pacific    
                               <input type='radio' id='IDi_tzm' name='tz' value='m' adj='1' $m_checked > Mountain  
                               <input type='radio' id='IDi_tzc' name='tz' value='c' adj='2' $c_checked > Central  
                               <input type='radio' id='IDi_tze' name='tz' value='e' adj='3' $e_checked > Eastern</th>\n";
-   $stable .= "         <th>Away Team</th>\n";
-   $stable .= "         <th>Home Team</th>\n";
+   $stable .= "         <th class='text-center'>Away Team</th>\n";
+   $stable .= "         <th class='text-center'>Home Team</th>\n";
    $stable .= "      </tr>\n";
    $stable .= "   </thead>\n";
    $stable .= "   <tbody id='IDtb_fullschedule' leagueid='$league_id' leaguetype='$league_type' week='$current_week' userid='$user_id' picklimit='1'>\n";
@@ -202,9 +202,9 @@ function echoKOCohortPublicPicks(
       
       // http://www.w3schools.com/bootstrap/bootstrap_buttons.asp
       $stable .= "      <tr id='$row_id' $game_class_string gameat='$gametime' scheduleid='$id'>\n";
-      $stable .= "         <td name='gametimedisplay' class='pickskogametime'>$display_gametime</td>\n";
-      $stable .= "         <td><button  id='$away_id' type='button' class='btn $choose_away pickskobutton' available='$away_is_available' myrowid='$row_id' name='pickerbutton' whereplay='a' myfriendpickid='$home_game_selected' myfriendbuttonid='$home_id' gamepickid='$away_game_selected' >$away $spread_a</button></td>\n";
-      $stable .= "         <td><button  id='$home_id' type='button' class='btn $choose_home pickskobutton' available='$home_is_available' myrowid='$row_id' name='pickerbutton' whereplay='h' myfriendpickid='$away_game_selected' myfriendbuttonid='$away_id' gamepickid='$home_game_selected' >@$home $spread_h</button></td>\n";
+      $stable .= "         <td name='gametimedisplay' class='pickskogametime col-md-4 text-center pickskocol'>$display_gametime</td>\n";
+      $stable .= "         <td class='col-md-4 text-center pickskocol'><button  id='$away_id' type='button' class='btn $choose_away pickskobutton' available='$away_is_available' myrowid='$row_id' name='pickerbutton' whereplay='a' myfriendpickid='$home_game_selected' myfriendbuttonid='$home_id' gamepickid='$away_game_selected' >$away $spread_a</button></td>\n";
+      $stable .= "         <td class='col-md-4 text-center pickskocol'><button  id='$home_id' type='button' class='btn $choose_home pickskobutton' available='$home_is_available' myrowid='$row_id' name='pickerbutton' whereplay='h' myfriendpickid='$away_game_selected' myfriendbuttonid='$away_id' gamepickid='$home_game_selected' ><span class='smallerAtSign'>@</span>$home $spread_h</button></td>\n";
       $stable .= "      </tr>\n";
       //  }
    }

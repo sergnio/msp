@@ -46,7 +46,7 @@ body {
 
 .fixed-footer {
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
 }
 
@@ -269,4 +269,17 @@ td a:hover {
 .pickemgametime,
 .pickskogametime {
   width: 45%;
+}
+
+/* Columns in the picks_ko_ajax & picks_ajax page
+ This is to align the text in the middle of the column and decrease the amount of padding  */
+.table>tbody>tr>td.pickemcol, .table>tfoot>tr>td.pickemcol, .table>thead>tr>td.pickemcol,
+.table>tbody>tr>td.pickskocol, .table>tfoot>tr>td.pickskocol, .table>thead>tr>td.pickskocol {
+  padding: 4px;
+  vertical-align: middle;
+}
+
+/* @ symbol one px smaller than other text*/
+.smallerAtSign {
+  font-size: .9em;
 }

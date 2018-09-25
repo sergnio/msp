@@ -283,20 +283,3 @@ td a:hover {
 .smallerAtSign {
   font-size: .9em;
 }
-
-
-/*
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
- {
-  padding: 4px;
-  vertical-align: center;
-}
-
-The original CSS selector to center text in the middle
-*/
-
-/*.table>tbody>tr>td.pickskogametime*/
-/*.table>tbody>tr>th{*/
-  /*padding: 4px;*/
-  /*vertical-align: middle;*/
-/*}*/

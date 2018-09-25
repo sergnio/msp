@@ -215,8 +215,8 @@ function get_public_picks(
       // http://www.w3schools.com/bootstrap/bootstrap_buttons.asp
       $stable .= "      <tr id='$row_id' $game_class_string gameat='$gametime' scheduleid='$id'>\n";
       $stable .= "         <td name='gametimedisplay' class='pickemgametime col-md-4 text-center'>$display_gametime</td>\n";
-      $stable .= "         <td class='col-md-4 text-center'><button  id='$away_id' type='button' class='btn $choose_away pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='a' myfriendpickid='$home_game_selected' myfriendbuttonid='$home_id' gamepickid='$away_game_selected' >$away $spread_a</button></td>\n";
-      $stable .= "         <td class='col-md-4 text-center'><button  id='$home_id' type='button' class='btn $choose_home pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='h' myfriendpickid='$away_game_selected' myfriendbuttonid='$away_id' gamepickid='$home_game_selected' >@$home $spread_h</button></td>\n";
+      $stable .= "         <td class='col-md-4 text-center pickemcol'><button  id='$away_id' type='button' class='btn $choose_away pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='a' myfriendpickid='$home_game_selected' myfriendbuttonid='$home_id' gamepickid='$away_game_selected' >$away $spread_a</button></td>\n";
+      $stable .= "         <td class='col-md-4 text-center pickemcol'><button  id='$home_id' type='button' class='btn $choose_home pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='h' myfriendpickid='$away_game_selected' myfriendbuttonid='$away_id' gamepickid='$home_game_selected' ><span class='smallerAtSign'>@</span>$home $spread_h</button></td>\n";
       $stable .= "      </tr>\n";
       //  }
    }

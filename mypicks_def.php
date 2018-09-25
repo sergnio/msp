@@ -148,7 +148,7 @@ if (strpos($php_server_string,  'mysuperpicks.com') !== false) { // mysuperpicks
 } elseif (strpos($php_self_string, '/nflx/') !== false) { // local box
    define('DOMAIN_NAME',      'mysuperpicks.com');
    define('ADMIN_TABLE',      'nflx');
-   define('URL_HOME_PAGE',    'http://localhost/nflx/index.php');
+   define('URL_HOME_PAGE',    'http://localhost/index.php');
    define('HOST',             'localhost');
    define('DATABASE_NAME',    'mysuperpickslocal');
    define('USER_NAME',        'nfllocal'); 
@@ -162,14 +162,14 @@ if (strpos($php_server_string,  'mysuperpicks.com') !== false) { // mysuperpicks
    date_default_timezone_set(DEFAULT_TIME_ZONE);
    $global_runtime_environment_description = RUNTIME_ENVIRONMENT_DEV_PC;
 } else {  // local console execution will fall into here
-   define('URL_HOME_PAGE',    'http://localhost/nflx/index.php');
-   define('ADMIN_TABLE',      'nflx');
-   define('HOST',             'localhost');
+   define('URL_HOME_PAGE',    'http://localhost/index.php');
+   define('ADMIN_TABLE',      'mysuperpicks');
+   define('HOST',             '127.0.0.1');
    define('DATABASE_NAME',    'mysuperpickslocal');
-   define('USER_NAME',        'nfllocal'); 
-   define('USER_PASSWORD',    'nfllocalTest1234!');
+   define('USER_NAME',        'msplocal');
+   define('USER_PASSWORD',    'msplocal');
    define('MY_SERVER_NAME',   'localhost');
-   define('MY_SHORT_PATH',    '/nflx/');
+   define('MY_SHORT_PATH',    '/');
    define('MAIL_TO_CONTACT',  '');
    define('MAIL_FROM_CONTACT','');
    define('LINK_CONFIRM',     'http://www.mysuperpicks.com/register.php');

@@ -579,3 +579,108 @@
 [14-Sep-2018 13:51:21 America/Los_Angeles] PHP Fatal error:  Call to undefined function contact_form_filled_out() in /home/mattleisen/public_html/email_league2.php on line 27
 [16-Sep-2018 14:04:50 America/Los_Angeles] PHP Fatal error:  Call to undefined function put_pagination_weekly() in /home/mattleisen/public_html/standings.php on line 77
 [16-Sep-2018 16:35:47 America/Los_Angeles] PHP Fatal error:  Call to undefined function put_pagination_weekly() in /home/mattleisen/public_html/standings.php on line 77
+[19-Sep-2018 18:44:45 America/Los_Angeles] PHP Fatal error:  Call to undefined function put_pagination_weekly() in /home/mattleisen/public_html/standings.php on line 77
+[20-Sep-2018 11:19:52 America/Los_Angeles] PHP Fatal error:  Call to undefined function put_pagination_weekly() in /home/mattleisen/public_html/standings.php on line 77
+[23-Sep-2018 18:22:20 America/Los_Angeles] PHP Fatal error:  Call to undefined function put_pagination_weekly() in /home/mattleisen/public_html/standings.php on line 77
+[25-Sep-2018 15:22:22 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:22:22 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:22:22 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:22:29 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:22:29 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:22:29 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:22:31 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:22:31 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:22:31 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:22:46 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:22:46 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:22:46 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:22:47 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:22:47 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:22:47 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:22:48 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:22:48 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:22:48 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:22:48 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:22:48 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:22:48 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:22:49 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:22:49 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:22:49 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:22:50 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:22:50 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:22:50 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:33 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:33 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:33 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:34 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:34 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:34 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:34 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:34 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:34 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:35 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:35 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:35 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:35 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:35 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:35 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:41 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:41 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:41 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:41 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:41 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:41 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:42 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:42 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:42 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:53 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:53 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:53 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:54 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:54 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:54 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:23:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:23:57 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:23:57 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:06 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:06 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:06 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:09 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:09 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:09 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:21 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:21 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:21 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:26 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:26 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:26 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:27 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:27 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:27 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:28 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:28 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:28 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:29 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:29 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:29 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:30 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:30 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:30 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:30 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:30 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:30 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:24:31 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:24:31 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:24:31 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:25:10 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:25:10 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:25:10 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:25:11 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:25:11 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:25:11 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:25:19 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:25:19 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:25:19 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331
+[25-Sep-2018 15:25:33 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/mattleisen/public_html/site_fns_diminished.php on line 88
+[25-Sep-2018 15:25:33 America/Los_Angeles] PHP Warning:  db_connect(): Couldn't fetch mysqli in /home/mattleisen/public_html/site_fns_diminished.php on line 91
+[25-Sep-2018 15:25:33 America/Los_Angeles] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/mattleisen/public_html/mypicks_db.php on line 3331

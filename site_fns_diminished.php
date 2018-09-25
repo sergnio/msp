@@ -83,9 +83,10 @@ require_once 'mypicks_phpgeneral.php';
 
 function db_connect() {
    global $global_mysuperpicks_dbo;
-   //$global_mysuperpicks_dbo = new mysqli(HOST, USER_NAME, USER_PASSWORD, DATABASE_NAME,Allow Zero Datetime=true);  Allow Zero Datetime=True
-//   $global_mysuperpicks_dbo = new mysqli(HOST, USER_NAME, USER_PASSWORD, DATABASE_NAME, 3307);
-   $global_mysuperpicks_dbo = new mysqli('127.0.0.1', 'root', '', 'mysuperpicks', 3306);
+//   $global_mysuperpicks_dbo = new mysqli(HOST, USER_NAME, USER_PASSWORD, DATABASE_NAME,Allow Zero Datetime=true);  Allow Zero Datetime=True
+   $global_mysuperpicks_dbo = new mysqli(HOST, USER_NAME, USER_PASSWORD, DATABASE_NAME, 3307);
+   // TODO: Finish testing, forcing the connect to localhost
+//   $global_mysuperpicks_dbo = new mysqli('127.0.0.1', 'root', '', 'mysuperpicks', 3306);
    if ($global_mysuperpicks_dbo->connect_errno) {
       $er = 'errno: ' . $global_mysuperpicks_dbo->connect_error;
       if (isset($global_mysuperpicks_dbo->error)) {

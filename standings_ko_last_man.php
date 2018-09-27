@@ -122,10 +122,10 @@ echoSessionMessage();
          <div style='text-align:center;'>
             <?php echo $title_line; ?>
          <br />
-         <div id='IDd_legend' style='margin: 30px 200px 1px 200px;text-align:left;' hidden>
+         <div id='IDd_legend' hidden>
             <?php echo $legend; ?>
          </div>
-         <div id='IDd_about' style='margin: 30px 200px 1px 200px;text-align:left;' hidden>
+         <div id='IDd_about' hidden>
             <?php echo $about; ?>
          </div>
          <br />

@@ -106,7 +106,7 @@ function get_public_picks(
    $league_id,
    $points_used,
    $pick_limit = 5,
-   $tz = 'p'
+   $tz = 'c'
 ) {
 
    $p_checked = ($tz == 'p') ? "checked='checked'" : '';
@@ -143,9 +143,9 @@ function get_public_picks(
    $stable .= "   <thead>\n";
    $stable .= "      <tr>\n";
     $stable .= "         <div id='IDh_gametime' class='col-xs-12 text-left'>Game Time</div>
-                            <div><input type='radio' id='IDi_tzp' name='tz' value='p' adj='0' $p_checked > Pacific    
+                                <div> <input type='radio' id='IDi_tzp' name='tz' value='p' adj='0' $p_checked > Pacific    
                                 <input type='radio' id='IDi_tzm' name='tz' value='m' adj='1' $m_checked > Mountain  
-                                 <input type='radio' id='IDi_tzc' name='tz' value='c' adj='2' $c_checked > Central  
+                                <input type='radio' id='IDi_tzc' name='tz' value='c' adj='2' $c_checked > Central  
                                 <input type='radio' id='IDi_tze' name='tz' value='e' adj='3' $e_checked > Eastern</div>\n";
 
     $stable .= "      </tr>\n";

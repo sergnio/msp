@@ -28,18 +28,23 @@ var league_type = '';
 var alerts03_on = false;
 var alerts03_trivial_on = false;
 
+function changeTimeZone(adj, dateInCol) {
+    var p = dateInCol.parent();
+    var pacific_gametime = p.attr('gameat');
+    om = new moment(pacific_gametime);
+    om.add(adj, 'hours');
+    var display_time = om.format('ddd, MMM Do, h:mm a');
+    dateInCol.html(display_time);
+    //alert("gameat " + pacific_gametime + ", now at " + display_time);
+
+}
+
 $(document).ready(function() {
    $('input[name=tz]').click(function(e) {
+      var adjustment = $(this).attr('adj');
       $dateColText = $('td[name=gametimedisplay]');
       $dateColText.each(function() {
-         var adjustment = $(this).attr('adj');
-         var p = $(this).parent();
-         var pacific_gametime = p.attr('gameat');
-         om = new moment(pacific_gametime);
-         om.add(adjustment, 'hours');
-         var display_time = om.format('ddd, MMM Do, h:mm a');
-         $(this).html(display_time);
-         //alert("gameat " + pacific_gametime + ", now at " + display_time);
+          changeTimeZone(adjustment, $(this));
       });
    });
 });

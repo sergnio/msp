@@ -142,11 +142,15 @@ function get_public_picks(
    $stable .= "<table id=\"single\" class=\"table table-hover pickemtable\">\n";
    $stable .= "   <thead>\n";
    $stable .= "      <tr>\n";
-   $stable .= "         <th id='IDh_gametime' class='text-center'>Game Time <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<input type='radio' id='IDi_tzp' name='tz' value='p' adj='0' $p_checked > Pacific    
-                              <input type='radio' id='IDi_tzm' name='tz' value='m' adj='1' $m_checked > Mountain  
-                              <input type='radio' id='IDi_tzc' name='tz' value='c' adj='2' $c_checked > Central  
-                              <input type='radio' id='IDi_tze' name='tz' value='e' adj='3' $e_checked > Eastern</th>\n";
+    $stable .= "         <div id='IDh_gametime' class='col-xs-12 text-left'>Game Time</div>
+                            <div><input type='radio' id='IDi_tzp' name='tz' value='p' adj='0' $p_checked > Pacific    
+                                <input type='radio' id='IDi_tzm' name='tz' value='m' adj='1' $m_checked > Mountain  
+                                 <input type='radio' id='IDi_tzc' name='tz' value='c' adj='2' $c_checked > Central  
+                                <input type='radio' id='IDi_tze' name='tz' value='e' adj='3' $e_checked > Eastern</div>\n";
+
+    $stable .= "      </tr>\n";
+   $stable .= "      <tr>\n";
+   $stable .= "         <th class='text-left'>Date</th>\n";
    $stable .= "         <th class='text-center'>Away Team</th>\n";
    $stable .= "         <th class='text-center'>Home Team</th>\n";
    $stable .= "      </tr>\n";
@@ -213,9 +217,9 @@ function get_public_picks(
       
       // http://www.w3schools.com/bootstrap/bootstrap_buttons.asp
       $stable .= "      <tr id='$row_id' $game_class_string gameat='$gametime' scheduleid='$id'>\n";
-      $stable .= "         <td name='gametimedisplay' class='col-md-4 pickemgametime overflow-wrap'>$display_gametime</td>\n";
-      $stable .= "         <td class='col-md-4 text-center pickemcol'><button  id='$away_id' type='button' class='btn $choose_away pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='a' myfriendpickid='$home_game_selected' myfriendbuttonid='$home_id' gamepickid='$away_game_selected' >$away $spread_a</button></td>\n";
-      $stable .= "         <td class='col-md-4 text-center pickemcol'><button  id='$home_id' type='button' class='btn $choose_home pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='h' myfriendpickid='$away_game_selected' myfriendbuttonid='$away_id' gamepickid='$home_game_selected' ><span class='smallerAtSign'>@</span>$home $spread_h</button></td>\n";
+      $stable .= "         <td name='gametimedisplay' class='col-4 pickemgametime text-nowrap'>$display_gametime</td>\n";
+      $stable .= "         <td class='col-4 text-center pickemcol'><button  id='$away_id' type='button' class='btn $choose_away pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='a' myfriendpickid='$home_game_selected' myfriendbuttonid='$home_id' gamepickid='$away_game_selected' >$away $spread_a</button></td>\n";
+      $stable .= "         <td class='col-4 text-center pickemcol'><button  id='$home_id' type='button' class='btn $choose_home pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='h' myfriendpickid='$away_game_selected' myfriendbuttonid='$away_id' gamepickid='$home_game_selected' ><span class='smallerAtSign'>@</span>$home $spread_h</button></td>\n";
       $stable .= "      </tr>\n";
       //  }
    }

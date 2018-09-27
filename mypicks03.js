@@ -30,9 +30,9 @@ var alerts03_trivial_on = false;
 
 $(document).ready(function() {
    $('input[name=tz]').click(function(e) {
-      var adjustment = $(this).attr('adj');
       $dateColText = $('td[name=gametimedisplay]');
       $dateColText.each(function() {
+         var adjustment = $(this).attr('adj');
          var p = $(this).parent();
          var pacific_gametime = p.attr('gameat');
          om = new moment(pacific_gametime);

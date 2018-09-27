@@ -183,8 +183,6 @@ function get_public_picks(
       case 'e' :
          $hours_adjust = 'PT3H';
          break;
-      default :
-         // never here
       }
       $o_base_date->add(new DateInterval($hours_adjust));
       $display_gametime =  $o_base_date->format('D, M d') . '&nbsp;' . $o_base_date->format('g:i a');

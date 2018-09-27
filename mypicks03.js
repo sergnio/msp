@@ -29,14 +29,15 @@ var alerts03_on = false;
 var alerts03_trivial_on = false;
 
 $(document).ready(function() {
-   $('#IDh_gametime input[name=tz]').click(function(e) {
+   $('input[name=tz]').click(function(e) {
       var adjustment = $(this).attr('adj');
-      $('#IDtb_fullschedule td[name=gametimedisplay]').each(function() {
+      $dateColText = $('td[name=gametimedisplay]');
+      $dateColText.each(function() {
          var p = $(this).parent();
          var pacific_gametime = p.attr('gameat');
          om = new moment(pacific_gametime);
          om.add(adjustment, 'hours');
-         var display_time = om.format('ddd, MMM Do YYYY, h:mm a');
+         var display_time = om.format('ddd, MMM Do, h:mm a');
          $(this).html(display_time);
          //alert("gameat " + pacific_gametime + ", now at " + display_time);
       });

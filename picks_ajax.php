@@ -183,8 +183,7 @@ function get_public_picks(
          // never here
       }
       $o_base_date->add(new DateInterval($hours_adjust));
-      $display_gametime = $o_base_date->format('D, M d, Y') . '&nbsp;&nbsp;&nbsp;' . $o_base_date->format('g:i a');
-      
+      $display_gametime =  $o_base_date->format('D, M d') . '&nbsp;' . $o_base_date->format('g:i a');
       $spread_a = '';
       $spread_h = '';
       if ($points_used) {
@@ -214,7 +213,7 @@ function get_public_picks(
       
       // http://www.w3schools.com/bootstrap/bootstrap_buttons.asp
       $stable .= "      <tr id='$row_id' $game_class_string gameat='$gametime' scheduleid='$id'>\n";
-      $stable .= "         <td name='gametimedisplay' class='pickemgametime col-md-4 text-center'>$display_gametime</td>\n";
+      $stable .= "         <td name='gametimedisplay' class='col-md-4 pickemgametime overflow-wrap'>$display_gametime</td>\n";
       $stable .= "         <td class='col-md-4 text-center pickemcol'><button  id='$away_id' type='button' class='btn $choose_away pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='a' myfriendpickid='$home_game_selected' myfriendbuttonid='$home_id' gamepickid='$away_game_selected' >$away $spread_a</button></td>\n";
       $stable .= "         <td class='col-md-4 text-center pickemcol'><button  id='$home_id' type='button' class='btn $choose_home pickembutton' myrowid='$row_id' name='pickerbutton' whereplay='h' myfriendpickid='$away_game_selected' myfriendbuttonid='$away_id' gamepickid='$home_game_selected' ><span class='smallerAtSign'>@</span>$home $spread_h</button></td>\n";
       $stable .= "      </tr>\n";

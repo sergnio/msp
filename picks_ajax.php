@@ -142,7 +142,7 @@ function get_public_picks(
    $stable .= "<table id=\"single\" class=\"table table-hover pickemtable\">\n";
    $stable .= "   <thead>\n";
    $stable .= "      <tr>\n";
-    $stable .= "         <div id='IDh_gametime' class='col-xs-12 text-left'>Game Time</div>
+    $stable .= "         <div id='IDh_gametime' class='col-12 text-left'>Game Time</div>
                                 <div> <input type='radio' id='IDi_tzp' name='tz' value='p' adj='0' $p_checked > Pacific    
                                 <input type='radio' id='IDi_tzm' name='tz' value='m' adj='1' $m_checked > Mountain  
                                 <input type='radio' id='IDi_tzc' name='tz' value='c' adj='2' $c_checked > Central  

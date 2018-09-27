@@ -163,7 +163,8 @@ while (1) {
       break;
    } else {
       $mail_status = 'success';
-      formatSessionMessage("Your picks verification mail was sent.  Delays could be experienced.", 'success', $msg, "vp-149 $to_address");
+//      formatSessionMessage("Your picks verification mail was sent.", 'success', $msg, "vp-149 $to_address");
+      formatSessionMessage("Your picks verification mail was sent.", 'success', $msg);
       setSessionMessage($msg, 'error');
    }
    
@@ -203,8 +204,8 @@ echo "
       <br />
       <br />
 
-         <div id='IDd_about' style='margin: 30px 200px 1px 200px;text-align:left;'>
-            <p>This is the body of the message.  Success or failure of the mail attempt is shown above.</p>
+         <div id='IDd_about'>
+            <p>Success or failure of the mail attempt is shown above.</p>
             <p>
             <pre>$msg_head_html</pre>
             </p>

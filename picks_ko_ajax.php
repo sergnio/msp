@@ -227,6 +227,7 @@ function echoKOCohortPublicPicks(
  * @return string
  * @throws Exception
  */
+// TODO : refactor so both picks_ajax and picks_ko_ajax use this method
 function changeDefaultTime($tz, $gametime)
 {
     $o_base_date = new DateTime($gametime);

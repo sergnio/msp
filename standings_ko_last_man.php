@@ -54,7 +54,7 @@ if ($league_first_round > $active_week) {  // for hot linking
    die();
 }
 
-$title_line = "<h2 style='text-align:center;'><i>$league_name</i>&nbsp;&nbsp;Survivor - (last man)" .
+$title_line = "<h2 style='text-align:center;'><i>$league_name</i>&nbsp;Survivor" .
               "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" .
               "<button  id='IDb_koabout' type='button' class='btn btn-info' name='aboutbutton' style='width:80px;'>About</button>
                <button  id='IDb_kolegendlastman' type='button' class='btn btn-info' name='legendbutton' style='width:80px;'>Legend</button></h2>";
@@ -69,6 +69,7 @@ $about = "
 ";
 
 $legend = "
+<div class='container'>
          <table id='IDtable_ko_legend' class='table' style='margin-left:auto;margin-right:auto;'>
             <thead>
                <tr>
@@ -77,8 +78,8 @@ $legend = "
                </tr>
             </thead>
                <tr>
-                  <td class='player_curse_sc' style='text-align:right;' >???</td>
-                  <td>Pick made. Game not started. Pick hidden from public until game time.</td>
+               <div  class='col-4'><td class='player_curse_sc' style='text-align:right;' >???</td></div>
+                  <div class='col-8'><td>Pick made. Game not started. Pick hidden from public until game time.</td></div>
                </tr>
                <tr>
                   <td  class='player_curse_ip' style='text-align:right;' >MIN</td>
@@ -101,7 +102,8 @@ $legend = "
                   <td>No pick made or player has been knocked out of the game.</td>
                </tr>
             </tbody>
-         </table>";
+         </table>
+         </div>";
 
 do_header('MySuperPicks.com - Standings KO');
 do_nav();
@@ -122,10 +124,10 @@ echoSessionMessage();
          <div style='text-align:center;'>
             <?php echo $title_line; ?>
          <br />
-         <div id='IDd_legend' style='margin: 30px 200px 1px 200px;text-align:left;' hidden>
+         <div id='IDd_legend' hidden>
             <?php echo $legend; ?>
          </div>
-         <div id='IDd_about' style='margin: 30px 200px 1px 200px;text-align:left;' hidden>
+         <div id='IDd_about' hidden>
             <?php echo $about; ?>
          </div>
          <br />

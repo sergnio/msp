@@ -262,7 +262,7 @@ function formatSessionMessage (
    $msg,
    $alert_class,     //success, info, infonoheader warning, danger - any other key is default formatting
    &$formatted_message = '',
-   $reference = 'no reference available'
+   $reference
 ) {
 
    if (!($alert_class == 'success' || $alert_class == 'info' || $alert_class == 'infonoheader'  || $alert_class == 'warning' || $alert_class == 'danger')) {

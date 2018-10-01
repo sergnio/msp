@@ -95,7 +95,8 @@ function echoKOCohortPublicPicks(
    $league_id = 210,
    $league_type = 2,
    $odds_in_use,
-   $tz = 'p'
+   //TODO: Use switch statement, add checked based off value passed
+   $tz = 'c'
 ) {
 
    $p_checked = ($tz == 'p') ? "checked='checked'" : '';
@@ -111,7 +112,7 @@ function echoKOCohortPublicPicks(
    // the spent teams.
    $mysql = "
       select s.schedule_id,
-             concat_ws(' ', date_format(s.gametime, '%a, %b %d, %Y %l:%i'), lower(date_format(s.gametime, '%p'))) displaydate,
+             concat_ws(' ', date_format(s.gametime, '%a, %b %d %l:%i'), lower(date_format(s.gametime, '%p'))) displaydate,
              s.gametime,
              if (s.gametime < now(), 'gamestarted', 'gamescheduled') gameclass,
              s.home,
@@ -133,17 +134,21 @@ function echoKOCohortPublicPicks(
    $stable = "\n";
    //$stable .= "<table id=\"single\" class=\"table table-hover table-striped\">\n";
    $stable .= "<table id=\"single\" class=\"table table-hover table-responsive pickskotable\">\n";
-   $stable .= "   <thead>\n";
-   $stable .= "      <tr>\n";
-   $stable .= "         <th id='IDh_gametime' class='text-center'>Game Time <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<input type='radio' id='IDi_tzp' name='tz' value='p' adj='0' $p_checked > Pacific    
-                              <input type='radio' id='IDi_tzm' name='tz' value='m' adj='1' $m_checked > Mountain  
-                              <input type='radio' id='IDi_tzc' name='tz' value='c' adj='2' $c_checked > Central  
-                              <input type='radio' id='IDi_tze' name='tz' value='e' adj='3' $e_checked > Eastern</th>\n";
-   $stable .= "         <th class='text-center'>Away Team</th>\n";
-   $stable .= "         <th class='text-center'>Home Team</th>\n";
-   $stable .= "      </tr>\n";
-   $stable .= "   </thead>\n";
+    $stable .= "   <thead>\n";
+    $stable .= "      <tr>\n";
+    $stable .= "         <div id='IDh_gametime' class='col-12 text-left'>Game Time</div>
+                                <div> <input type='radio' id='IDi_tzp' name='tz' value='p' adj='0' $p_checked > Pacific    
+                                <input type='radio' id='IDi_tzm' name='tz' value='m' adj='1' $m_checked > Mountain  
+                                <input type='radio' id='IDi_tzc' name='tz' value='c' adj='2' $c_checked > Central  
+                                <input type='radio' id='IDi_tze' name='tz' value='e' adj='3' $e_checked > Eastern</div>\n";
+
+    $stable .= "      </tr>\n";
+    $stable .= "      <tr>\n";
+    $stable .= "         <th class='text-left'>Date</th>\n";
+    $stable .= "         <th class='text-center'>Away Team</th>\n";
+    $stable .= "         <th class='text-center'>Home Team</th>\n";
+    $stable .= "      </tr>\n";
+    $stable .= "   </thead>\n";
    $stable .= "   <tbody id='IDtb_fullschedule' leagueid='$league_id' leaguetype='$league_type' week='$current_week' userid='$user_id' picklimit='1'>\n";
    
    // No index used in query/prepared statement select  TODO fix
@@ -157,8 +162,10 @@ function echoKOCohortPublicPicks(
    $sth->bind_result($id, $display_gametime, $gametime, $gameclass, $home, $away, $spread, $homescore, $awayscore, $user_choice, $pick_id, $game_week);
    $a_spent = array();
    while ($sth->fetch()) {
-      
-      if ($game_week < $current_week) {   // then we are building the spent array
+
+       $display_gametime = changeDefaultTime($tz, $gametime);
+
+       if ($game_week < $current_week) {   // then we are building the spent array
          if ($user_choice) {
             if ($user_choice == 'h') {
                $a_spent["$home"] = 1;
@@ -202,7 +209,7 @@ function echoKOCohortPublicPicks(
       
       // http://www.w3schools.com/bootstrap/bootstrap_buttons.asp
       $stable .= "      <tr id='$row_id' $game_class_string gameat='$gametime' scheduleid='$id'>\n";
-      $stable .= "         <td name='gametimedisplay' class='pickskogametime col-md-4 text-center pickskocol'>$display_gametime</td>\n";
+      $stable .= "         <td name='gametimedisplay' class='pickskogametime col-md-4 text-nowrap pickskocol'>$display_gametime</td>\n";
       $stable .= "         <td class='col-md-4 text-center pickskocol'><button  id='$away_id' type='button' class='btn $choose_away pickskobutton' available='$away_is_available' myrowid='$row_id' name='pickerbutton' whereplay='a' myfriendpickid='$home_game_selected' myfriendbuttonid='$home_id' gamepickid='$away_game_selected' >$away $spread_a</button></td>\n";
       $stable .= "         <td class='col-md-4 text-center pickskocol'><button  id='$home_id' type='button' class='btn $choose_home pickskobutton' available='$home_is_available' myrowid='$row_id' name='pickerbutton' whereplay='h' myfriendpickid='$away_game_selected' myfriendbuttonid='$away_id' gamepickid='$home_game_selected' ><span class='smallerAtSign'>@</span>$home $spread_h</button></td>\n";
       $stable .= "      </tr>\n";
@@ -212,6 +219,36 @@ function echoKOCohortPublicPicks(
    $stable .= "</table>\n";
    echo $stable;
    @ $sth->close();
+}
+
+/**
+ * @param $tz
+ * @param $gametime
+ * @return string
+ * @throws Exception
+ */
+// TODO : refactor so both picks_ajax and picks_ko_ajax use this method
+function changeDefaultTime($tz, $gametime)
+{
+    $o_base_date = new DateTime($gametime);
+    $hours_adjust = 0;
+    switch ($tz) {
+        case 'p' :
+            $hours_adjust = 'PT0H';
+            break;
+        case 'm' :
+            $hours_adjust = 'PT1H';
+            break;
+        case 'c' :
+            $hours_adjust = 'PT2H';
+            break;
+        case 'e' :
+            $hours_adjust = 'PT3H';
+            break;
+    }
+    $o_base_date->add(new DateInterval($hours_adjust));
+    $display_gametime = $o_base_date->format('D, M d') . '&nbsp;' . $o_base_date->format('g:i a');
+    return $display_gametime;
 }
 
 

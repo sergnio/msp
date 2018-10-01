@@ -28,6 +28,12 @@ var league_type = '';
 var alerts03_on = false;
 var alerts03_trivial_on = false;
 
+
+/**
+ * Changes time zone in picks_ajax.php and picks_ko_ajax.php
+ * @param adj since default is pacific, this is the difference in time zone from pacific
+ * @param dateInCol current column in table which will be modified, depending on the time zone selected.
+ */
 function changeTimeZone(adj, dateInCol) {
     var p = dateInCol.parent();
     var pacific_gametime = p.attr('gameat');

@@ -95,7 +95,7 @@ function echoKOCohortPublicPicks(
    $league_id = 210,
    $league_type = 2,
    $odds_in_use,
-   // Use switch statement, add checked based off value passed
+   //TODO: Use switch statement, add checked based off value passed
    $tz = 'c'
 ) {
 

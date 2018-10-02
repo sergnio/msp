@@ -664,7 +664,7 @@ for ($j=1;$j<=$counter;$j++) {
 function get_schedules_admin($week) {  //nsp 4/2016
    echo "\n";
    echo "<form action=\"scheduleseditadmin.php\" method=\"post\" class=\"form-horizontal\" role=\"form\" enctype=\"multipart/form-data\">\n";
-   echo "<table id=\"single\" class=\"table table-hover table-striped\">\n";
+   echo "<table id=\"single\" class=\"table table-hover table-striped schedule-table\">\n";
    echo "   <thead>\n";
    echo "      <tr>\n";
    echo "         <th>Date/Time (CST)</th>\n";
@@ -693,12 +693,12 @@ function get_schedules_admin($week) {  //nsp 4/2016
       $awayscore = $row->awayscore;
       echo "      <tr>\n";
       echo "		 <input type=\"hidden\" name=\"gametime_utc[]\" value=\"$row->gametime\">";
-      echo "         <td><input type=\"text\" name=\"gametime[]\" value=\"$localTime\" data-field=\"datetime\" /><div id=\"dtBox$i\"></div></td>\n";
-      echo "         <td><input type=\"text\" name=\"away[]\" value=\"$row->away\" /></td>\n";
-	  echo "         <td><input type=\"text\" name=\"home[]\" value=\"$row->home\" /></td>\n";
-      echo "         <td><input type=\"text\" name=\"spread[]\" value=\"$row->spread\" /></td>\n";
-	  echo "         <td><input type=\"text\" name=\"awayscore[]\" value=\"$row->awayscore\" /><input type=\"hidden\" name=\"id[]\" value=\"$row->schedule_id\" /></td>\n";
-      echo "         <td><input type=\"text\" name=\"homescore[]\" value=\"$row->homescore\" /><input type=\"hidden\" name=\"week[]\" value=\"$week\" /></td>\n";
+      echo "         <td class='restricted-inputs'><input class='form-control' type=\"text\" name=\"gametime[]\" value=\"$localTime\" data-field=\"datetime\" /><div id=\"dtBox$i\"></div></td>\n";
+      echo "         <td><input class='form-control' type=\"text\" name=\"away[]\" value=\"$row->away\" /></td>\n";
+	  echo "         <td><input class='form-control' type=\"text\" name=\"home[]\" value=\"$row->home\" /></td>\n";
+      echo "         <td><input class='form-control' type=\"text\" name=\"spread[]\" value=\"$row->spread\" /></td>\n";
+	  echo "         <td><input class='form-control' type=\"text\" name=\"awayscore[]\" value=\"$row->awayscore\" /><input type=\"hidden\" name=\"id[]\" value=\"$row->schedule_id\" /></td>\n";
+      echo "         <td><input class='form-control' type=\"text\" name=\"homescore[]\" value=\"$row->homescore\" /><input type=\"hidden\" name=\"week[]\" value=\"$week\" /></td>\n";
       echo "      </tr>\n";
       $i++;
    }

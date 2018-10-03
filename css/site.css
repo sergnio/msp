@@ -19,15 +19,16 @@
 }
 .table.againstSpread .ascending:before,
 .table.againstSpread .descending:before {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .table.againstSpread .descending:before {
   content: "\e094";

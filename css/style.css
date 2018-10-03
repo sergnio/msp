@@ -283,3 +283,13 @@ td a:hover {
 .smallerAtSign {
   font-size: .9em;
 }
+
+/* Smaller column widths */
+.schedule-table {
+  max-width:60%;
+}
+
+/* Fix the width of this column, which contains the date */
+.restricted-inputs {
+  width:19rem;
+}

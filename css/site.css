@@ -33,3 +33,36 @@
 .table.againstSpread .descending:before {
   content: "\e094";
 }
+
+.blue {
+    background-color:rgba(240,246,254,1);
+}
+
+.red {
+    background-color: rgba(266,239,237,1);
+}
+
+#ATSTable > tbody > tr:nth-child(odd) > td {
+    background-color: white;
+}
+
+#ATSTable > tbody > tr:nth-child(odd) > th {
+    background-color: black;
+}
+
+#ATSTable > thead > tr:nth-child(1) > th:nth-child(1) {
+    border-right-color: rgb(141,0,39) ;
+}
+
+#ATSTable > thead > tr:nth-child(1) > th:nth-child(1),
+#ATSTable > thead > tr:nth-child(1) > th:nth-child(2) {
+    background-color :rgb(141,0,39);
+    color:white;
+    font-family:'Arial';
+}
+
+#ATSTable > thead > tr:nth-child(1) > th:nth-child(3) {
+    background-color:rgb(93,158,245);
+    color:white;
+    font-family:'Arial';
+}

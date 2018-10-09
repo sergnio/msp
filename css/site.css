@@ -80,3 +80,9 @@
         padding: 4px;
     }
 }
+
+/* Sorted arrow from kylefox/jquery-tablesort */
+.table > thead > tr > th.sorted.descending:before,
+.table > thead > tr > th.sorted.ascending:before {
+    content:none;
+}

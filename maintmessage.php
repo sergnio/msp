@@ -40,7 +40,7 @@ mysqli_close($conn);
           <form action="adminmessage2.php" method="post" class="form" role="form" enctype="multipart/form-data"> 
             <div class="form-group">
               <textarea class="form-control ckeditor" rows="8" placeholder="New Homepage Text" name="homepage_message"><?php echo get_text($_SESSION['league_id']);  ?></textarea>
-              <br /><button type="submit" class="btn btn-primary">Edit Homepage Text</button>
+              <br /><button type="submit" class="btn btn-primary">Save</button>
               <input type="hidden" name="submit" value="true" />
             </div>
           </form>

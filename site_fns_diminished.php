@@ -80,6 +80,8 @@ function view_mail($id) {
 
 require_once 'mypicks_db.php';
 require_once 'mypicks_phpgeneral.php';
+// CSS class named highlight-row
+const HIGHLIGHTROW = "highlight-row";
 
 function db_connect() {
    global $global_mysuperpicks_dbo;
@@ -596,75 +598,13 @@ function notify_password($fname, $email, $password) {
     }
 }
 
-function get_schedules($week) {
-   echo "\n";
-   echo "<tr><form action=\"scheduleedit.php\" method=\"post\" class=\"form-horizontal\" role=\"form\" enctype=\"multipart/form-data\">";
-   echo "<table id=\"single\" class=\"table table-hover table-striped\">\n";
-   echo "   <thead><th>Date/Time</th>\n";
-   echo "      <tr>\n";
-   echo "         <th>Home Team</th>\n";
-   echo "         <th>Away Team</th>\n";
-   echo "         <th>Spread</th>\n";
-   echo "         <th>Home Score</th>\n";
-   echo "         <th>Away Score</th>\n";
-   echo "         <th>Edit</th>\n";
-   echo "      </tr>\n";
-   echo "   </thead>\n";
-   echo "   <tbody>\n";
-
-   $mysql = "
-      select schedule_id,
-             home,
-             away,
-             spread,
-             homescore,
-             awayscore,
-             if (gametime is null, 'null', gametime)
-       where week = ?";
-
-   $conn = db_connect();
-   $sth = $conn->prepare($mysql);
-   $sth->bind_param("i", $week);
-   $sth->execute();
-   $counter = $sth->num_rows;
-   $sth->bind_result($id, $home, $away, $spread, $homescore, $awayscore, $gametime);
-   while ($sth->fetch()) {
-      echo "   <tr>\n";
-      echo "      <td><input type=\"text\" name=\"gametime\" value=\"$gametime\" data-field=\"datetime\" /><div id=\"dtBox$i\"></div></td>\n";
-      echo "      <td><input type=\"text\" name=\"home\" value=\"$home\" /></td>\n";
-      echo "      <td><input type=\"text\" name=\"away\" value=\"$away\" /></td>";
-      echo "      <td><input type=\"text\" name=\"spread\" value=\"$spread\" /></td>\n";
-      echo "      <td><input type=\"text\" name=\"homescore\" value=\"$homescore\" /></td>\n";
-      echo "      <td><input type=\"text\" name=\"awayscore\" value=\"$awayscore\" /><input type=\"hidden\" name=\"week\" value=\"$week\" /></td>\n";
-      echo "      <td><button type=\"submit\" class=\"btn btn-primary\">Edit</button><input type=\"hidden\" name=\"id\" value=\"$schedule_id\" /></td>\n";
-      echo "   </tr>\n";
-   }
-
-   echo "   </tbody>\n";
-   echo "</table>\n";
-   echo "</form>\n";
-   mysqli_close($conn);
-?>
-<script type="text/javascript">
-   $(document).ready(function()
-   {
-<?php
-for ($j=1;$j<=$counter;$j++) {
-?>
-   $("#dtBox<?php echo $j; ?>").DateTimePicker();
-<?php
-}
-?>
- });
-</script>
-<?php
-}  // end function get_schedules
 
 
 function get_schedules_admin($week) {  //nsp 4/2016
    echo "\n";
    echo "<form action=\"scheduleseditadmin.php\" method=\"post\" class=\"form-horizontal\" role=\"form\" enctype=\"multipart/form-data\">\n";
-   echo "<table id=\"single\" class=\"table table-hover table-striped schedule-table\">\n";
+//   TODO: There are multiple tables with the ID "single". Need to give unique IDs
+   echo "<table id=\"editScheduleTable\" class=\"table table-hover table-striped schedule-table\">\n";
    echo "   <thead>\n";
    echo "      <tr>\n";
    echo "         <th>Date/Time (CST)</th>\n";
@@ -676,6 +616,11 @@ function get_schedules_admin($week) {  //nsp 4/2016
    echo "      </tr>\n";
    echo "   </thead>\n";
    echo "   <tbody>\n";
+
+   // Ensure we are on CST, since the dates entered into the DB are CST
+   date_default_timezone_set('America/Chicago');
+   $currentTime = date('Y-m-d H:i:s', time());
+
    $conn = db_connect();
    $result = $conn->query("SELECT COUNT(*) as count FROM schedules WHERE week='".$week."'");
    $row=$result->fetch_object();
@@ -686,12 +631,13 @@ function get_schedules_admin($week) {  //nsp 4/2016
       $id = $row->schedule_id;
       $gametime = $row->gametime;
 	  $localTime = convert_to_user_date($gametime, "Y-m-d H:i:s");
-      $home = $row->home;
+	  $game_started = hasGameStarted($localTime, $currentTime);
+       $home = $row->home;
       $away = $row->away;
       $spread = $row->spread;
       $homescore = $row->homescore;
       $awayscore = $row->awayscore;
-      echo "      <tr>\n";
+      echo "      <tr class=$game_started>\n";
       echo "		 <input type=\"hidden\" name=\"gametime_utc[]\" value=\"$row->gametime\">";
       echo "         <td class='restricted-inputs'><input class='form-control' type=\"text\" name=\"gametime[]\" value=\"$localTime\" data-field=\"datetime\" /><div id=\"dtBox$i\"></div></td>\n";
       echo "         <td><input class='form-control' type=\"text\" name=\"away[]\" value=\"$row->away\" /></td>\n";
@@ -724,6 +670,20 @@ for ($j=1;$j<=$count;$j++) {
  });
 </script>
 <?php
+}
+
+/**
+ * Check if the game has started. If so, assign the CSS styling "highlight-row" to a variable
+ *
+ * @param $localTime game start time
+ * @param $currentTime current time
+ * @return string the styling class for each row
+ */
+function hasGameStarted($localTime, $currentTime)
+{
+    $started = $localTime <= $currentTime;
+    $game_started = ($started) ? HIGHLIGHTROW : '';
+    return $game_started;
 }
 
 // js support mypicks02.js - doc ready click edituserbutton ( vs editleagueuserbutton, the league version of all users)

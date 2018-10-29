@@ -416,7 +416,7 @@ function contact_form_filled_out($form_vars) {
 
 function filled_out($form_vars) {
   // if name or message is empty, fail
-  if (empty($form_vars['contactname']) || empty($form_vars['contactmessage'])) {
+  if (empty($form_vars['contactname']) || empty($form_vars['contactmessage']) || empty($form_vars['contactsubject'])) {
     return false;
   }
    // test that each variable has a value

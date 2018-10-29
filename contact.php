@@ -16,11 +16,10 @@ require_once 'mypicks_def.php';
 require_once 'site_fns_diminished.php';
 require_once 'mypicks_phpgeneral.php';
 $msg = '';
-
-
 $name =    (!empty($_SESSION['contactname']))    ? $_SESSION['contactname']    : '';
 $email =   (!empty($_SESSION['contactemail']))   ? $_SESSION['contactemail']   : '';
 $message = (!empty($_SESSION['contactmessage'])) ? $_SESSION['contactmessage'] : '';
+$subject = (!empty($_SESSION['contactsubject'])) ? $_SESSION['contactsubject'] : 'Contact from MySuperPicks.com';
 
 do_header('MySuperPicks.com - Contact Us');
 do_nav();
@@ -47,6 +46,12 @@ echo "
             <label for='email' class='col-sm-2 control-label'>Email</label>
             <div class='col-sm-8'>
                <input type='email' class='form-control' name='contactemail' placeholder='Your Email Address' value='$email' />
+            </div>
+         </div>
+         <div class='form-group'>
+            <label for='subject' class='col-sm-2 control-label'>Subject</label>
+            <div class='col-sm-8'>
+               <input type='text' class='form-control' name='contactsubject' placeholder='Subject' value='$subject' />
             </div>
          </div>
          <div class='form-group'>

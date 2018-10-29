@@ -1125,7 +1125,7 @@ function get_public_picks_moved_to_picksphp($week) {
       $row_id = 'IDr_' . $id;
       $away_id = 'IDb_away' . $id;
       $home_id = 'IDb_home' . $id;
-      $started_class = ($disabled) ? "class='gamestarted'" : '';
+      $started_class = ($disabled) ? "class='highlight-row'" : '';
       // if ($now < $gametime2) {
       $stable .= "      <tr id='$row_id' $started_class $disabled>\n";
       $stable .= "         <td>$gametime</td>\n";

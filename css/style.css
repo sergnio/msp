@@ -147,11 +147,7 @@ td a:hover {
   text-align: center;
 }
 
-/* hugh stuff */
-.mymistyrose {
-  background-color: mistyrose;
-}
-.gamestarted {
+.highlight-row {
   background-color: MistyRose;
 }
 .dobreaks {

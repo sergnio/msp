@@ -518,7 +518,7 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
 
       // Add highlight to the row if you are the selected player
        if ($session_user_name == $a_player_usernames[$player]) {
-           $rows_html .= "<td style='background-color:MistyRose;' class='$winner' >$player</td>\n";
+           $rows_html .= "<td class='$winner highlight-row' >$player</td>\n";
        } else {
            $rows_html .= "<td >\n";
        }

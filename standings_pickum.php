@@ -36,17 +36,6 @@ if ($league_type != LEAGUE_TYPE_PICKUM) {
 @$user_name =     $_SESSION['valid_user'];
 @$league_id =     $_SESSION['league_id'];
 
-if (  !$active_week ||
-      !$first_week  ||
-      !$user_id     ||
-      !$user_name   ||
-      !$league_id )
-{
-
-   // getLeagueParameters
-
-}
-
 if ($active_week < $first_week) {
    formatSessionMessage("$league_name league's first round doesn't begin until season week $first_week.  The current week is $active_week.  Please return later.",
          'info', $msg, "sp-51");
@@ -205,7 +194,7 @@ echo "
    <div class="row">
       <div class="col-md-6">
          <div style='text-align:center;'>
-            <h3 style='text-align:center;'>Weeky Standing. Week #<span id='IDs_weeknumber'><?php echo $active_week;?></span></h3>
+            <h3 style='text-align:center;'>Weekly Standing. Week #<span id='IDs_weeknumber'><?php echo $active_week;?></span></h3>
 <?php
             put_pagination_weekly_ajax($active_week, $league_id, 'IDul_upperWeekSelector', 'up', $last_completed_week);
 ?>

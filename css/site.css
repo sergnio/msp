@@ -34,6 +34,16 @@
   content: "\e094";
 }
 
+/* Heading of the ATS table */
+#ATSTable>thead>tr>th {
+    padding: 2px;
+}
+
+/* Body of the ATS table */
+#ATSTable>tbody>tr>td {
+    padding:0px;
+}
+
 /* Secondary headers */
 #ATSTable > tbody > tr:nth-child(odd) > th {
     background-color: black;

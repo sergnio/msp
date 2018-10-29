@@ -362,9 +362,9 @@ function do_footer(
    	  <div class="scoreboardWrapper fixed-footer"><div class="scoreboard"><?php echo get_text2('scoreboard-footer');?></div></div>
       <br />
       <div class="text-center">
-         <p>Copyright &#169;<?php echo date('Y'); ?><br />
+         <span id="footer-text">Copyright &#169;<?php echo date('Y'); ?>
             <?php echo '<a href="' . URL_HOME_PAGE . '" id="footer_link">MySuperPicks.com</a>' ?>
-         </p>
+         </span>
       </div>
    </footer>
 </body>

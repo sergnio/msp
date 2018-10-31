@@ -520,7 +520,7 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
        if ($session_user_name == $a_player_usernames[$player]) {
            $rows_html .= "<td class='$winner highlight-row' >$player</td>\n";
        } else {
-           $rows_html .= "<td >\n";
+           $rows_html .= "<td class='$winner' >$player</td>\n";
        }
 
       ($writes_on && writeDataToFile("506  $week_begin;  $game_over_on_week", __FILE__, __LINE__));

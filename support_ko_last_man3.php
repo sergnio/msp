@@ -31,6 +31,7 @@ function sayKOLastManStandingsTable(
    $week_current,
    $league_id,
    $use_vegas,    // 1 = no odds, 2 = odds
+   $session_user_name,
    &$ref_status_text = ''
 ){
    $ref_status_text = '';
@@ -84,11 +85,13 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
   
    $sql_players = "
       select y.playername,
-             y.userid
-        from nspx_leagueplayer as y, league as g
+             y.userid,
+             u.username
+        from nspx_leagueplayer as y, league as g, users as u
        where y.leagueid = ?
          and y.active = 2
          and y.leagueid = g.league_id
+         and y.userid = u.id
     order by y.playername";
     
     $sql_pending = "
@@ -108,7 +111,10 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
    $a_players_row = array();   // HTML player row.  It consists of TD elements for each processed week
    $a_players = array();      // All the players.  An array 'player name' => (team name, game status)
    $a_last_scheduled_game_status = array();  // The weekly status of the last scheduled game.  Is either 'sc' SCheduled or 'ip' InProgress
-   
+
+   // set the usernames of each player, used to highlight the row of the logged in player
+   $a_player_usernames = array();
+
    $calculated_end_week = 0;
    $hard_end_week = false;
    $game_is_over = false;
@@ -119,7 +125,8 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
    $no_pick_count = 0;
    $all_games_locked = false; // The last scheduled game of the week may not be in play, but all users have committed to teams in progress.
    
-   $status = 0;   
+   $status = 0;
+   //TODO - This while(1) is gross.
    while (1) {
       
       if (!$week_end) {  // league parameter 'lastround'
@@ -144,6 +151,7 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
       }
       
       //============================================================================================================== sql pending
+       // NOTE: $ans gets reqritten every time a sql query is run. This is bad practice, these should be different variables
       if (!$ans = runSql($sql_pending, '', 0, $ref_status_text)) {
          if ($ans === false) {
             formatSessionMessage("We are unable to display standings at this time.", 'info', $msg, "sklm3-153 $ref_status_text");
@@ -186,7 +194,8 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
       //     [silkplayer] => Array
       //
       //============================================================================================================== sql players
-      if (!$ans = runSql($sql_players, array("i", $league_id), 0, $ref_status_text)) {
+       // NOTE: $ans gets reqritten every time a sql query is run. This is bad practice, these should be different variables
+       if (!$ans = runSql($sql_players, array("i", $league_id), 0, $ref_status_text)) {
          if ($ans === false) {
             formatSessionMessage("We are unable to display standings at this time.", 'info', $msg, "sklm3-153 $ref_status_text");
             setSessionMessage($msg, 'error');
@@ -199,7 +208,11 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
          }
       }
       foreach ($ans as $player) {
-         $player_name = $player['playername'];
+         // the player name, usually first and last name
+          $player_name = $player['playername'];
+
+         // array of usernames for each player in the league
+         $a_player_usernames[$player_name] = $player['username'];
          $a_players[$player_name] = array();
          $a_players_win[$player_name] = '';
          $a_players_inout[$player_name] = 'in';
@@ -211,7 +224,8 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
       ($writes_on && writeDataToFile("210 array a_players" . print_r($a_players, true), __FILE__, __LINE__));
       
       //============================================================================================================== sql game info
-      if (!$ans = runSql($mysql, array("iii", $league_id, $week_begin, $calculated_end_week))) {
+       // NOTE: $ans gets reqritten every time a sql query is run. This is bad practice, these should be different variables
+       if (!$ans = runSql($mysql, array("iii", $league_id, $week_begin, $calculated_end_week))) {
          if ($ans === false) {
             formatSessionMessage("We are unable to display standings at this time.", 'info', $msg, "sklm3-177 $ref_status_text");
             setSessionMessage($msg, 'error');
@@ -494,16 +508,21 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
    
    //========================================================================================================================= display
    $rows_html = '';
+   $debug = '';
    $a_player_row = array();
    $ending_display_week = ($game_over_on_week == 0) ? $calculated_end_week : $game_over_on_week;
    foreach ($a_players as $player => $a) {
-      
       $player_out = false;
       $winner = ($a_players_win[$player] == 'win') ? "player_win" : '';
-      
       $rows_html .= "  <tr>\n";
-      $rows_html .= "     <td class='$winner' >$player</td>\n";
-      
+
+      // Add highlight to the row if you are the selected player
+       if ($session_user_name == $a_player_usernames[$player]) {
+           $rows_html .= "<td class='$winner highlight-row' >$player</td>\n";
+       } else {
+           $rows_html .= "<td >\n";
+       }
+
       ($writes_on && writeDataToFile("506  $week_begin;  $game_over_on_week", __FILE__, __LINE__));
       
       for ($wk = $week_begin; $wk <= $ending_display_week; $wk++) {
@@ -563,7 +582,6 @@ left join nspx_leagueplayer as y on y.leagueid = p.league_id and y.userid = (sel
 echo $table;
 
 }
-
 
 // Ties, 'ti', are changed to 'wi' or 'lo' before this function is called.
 function winnersWeekLastManStanding(

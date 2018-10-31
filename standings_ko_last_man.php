@@ -33,6 +33,8 @@ $league_last_round =  (isset($_SESSION['league_lastround'])) ?   $_SESSION['leag
 $league_points =      (!empty($_SESSION['league_points'])) ?     $_SESSION['league_points'] : '';
 $active_week =        (!empty($_SESSION['active_week'])) ?       $_SESSION['active_week'] : '';
 $user_id  =           (!empty($_SESSION['user_id'])) ?           $_SESSION['user_id'] : '';
+@$user_name =          $_SESSION['valid_user'];
+
 
 if (!$league_name || !$league_type || !$league_id || !$league_first_round || $league_last_round === '' || !$active_week || !$user_id) {
    formatSessionMessage("We are unable to display the standings. Information is missing.  Please contact the site administrator", 'danger', $msg);
@@ -135,7 +137,7 @@ echoSessionMessage();
 
             <div id='IDdiv_putWeeklyTable'>
             <?php
-               if (!sayKOLastManStandingsTable($league_first_round, $league_last_round, $active_week, $league_id, $league_points, $ref_status_text )) {  // support_ko_last_man.php
+               if (!sayKOLastManStandingsTable($league_first_round, $league_last_round, $active_week, $league_id, $league_points, $user_name, $ref_status_text)) {  // support_ko_last_man3.php
                   echoSessionMessage();
                }
             ?>

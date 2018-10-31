@@ -15,12 +15,14 @@ if ($site_name = 'mysuperpicks') {
 $name =    (!empty($_POST['contactname']))    ? $_POST['contactname']   : '';    // The client's name.
 $email =   (!empty($_POST['contactemail']))   ? $_POST['contactemail']   : '';   // the client's email address
 $message = (!empty($_POST['contactmessage'])) ? $_POST['contactmessage'] : '';   // His complaint - comment ...
+$subject = (!empty($_POST['contactsubject'])) ? $_POST['contactsubject'] : '';   // Subject
 
-writeDataToFile(" '$name', '$email', '$message'", __FILE__, __LINE__);
+writeDataToFile(" '$name', '$email', '$message', '$subject'", __FILE__, __LINE__);
 
 $_SESSION['contactname'] =    $name;
 $_SESSION['contactemail'] =   $email;
 $_SESSION['contactmessage'] = $message;
+$_SESSION['contactsubject'] = $subject;
 
 $contact_to = '';
 $contact_from = '';
@@ -51,10 +53,10 @@ while(1) {
    }
    // http://php.net/manual/en/function.mail.php
    $toaddress = $contact_to;
-   $subject = 'Contact from Website';
-   $mailcontent = "Contact name: $name \n\n
-   			       Contact email: $email \n\n
-                   Contact comments: $message \n";
+   // The spaces in this string get transfer to the e-mail, so be careful when adding/removing spaces here.
+   $mailcontent = "Contact name: $name,
+   Contact email: $email,
+   Contact comments: $message";
    $fromaddress = "From: $email";
 
    writeDataToFile("toaddress $toaddress name $name contact_from $contact_from", __FILE__, __LINE__);
@@ -65,7 +67,7 @@ while(1) {
       break;
    } else {
      if (isset($_POST['submit'])){
-       // TODO: hard coded to email address
+       // TODO: change hard coded to email address
        // $mailto = 'mattleisen@yahoo.com';
        $mailto = 'admin@mysuperpicks.com';
 

@@ -147,19 +147,21 @@ td a:hover {
   text-align: center;
 }
 
-/* hugh stuff */
-.mymistyrose {
-  background-color: mistyrose;
+/* Done to override the table-striped */
+#editScheduleTable > tbody >.highlight-row {
+  background-color:mistyrose;
 }
-.gamestarted {
+
+/* Highlights the entire row Misty Rose color */
+.highlight-row {
   background-color: MistyRose;
 }
+
 .dobreaks {
   white-space: pre;
 }
 
 /* ko last man */
-
 .player_bless_lo {
   background-color: yellow;
   color: red;

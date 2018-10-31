@@ -54,7 +54,7 @@ while(1) {
    // http://php.net/manual/en/function.mail.php
    $toaddress = $contact_to;
    // The spaces in this string get transfer to the e-mail, so be careful when adding/removing spaces here.
-   $mailcontent = "   Contact name: $name,
+   $mailcontent = "Contact name: $name,
    Contact email: $email,
    Contact comments: $message";
    $fromaddress = "From: $email";

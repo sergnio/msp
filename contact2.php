@@ -86,7 +86,7 @@ while(1) {
 }
 
 if (!$error) {
-   formatSessionMessage("Mail was sent.  Server load effects delivery times.  Delivery may be delayed.", 'success', $msg);
+   formatSessionMessage("Mail was sent.  Server load effects delivery times.", 'success', $msg);
    setSessionMessage($msg, 'happy');
 }
 

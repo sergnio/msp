@@ -129,7 +129,7 @@ if ($fail_count == $total_emails) {
       $failed_addresses.", 'warning', $msg);
    setSessionMessage($msg, 'error');
 } else {
-   formatSessionMessage("$total_emails $say_email sent.  Delivery may be delayed on a busy server.", 'success', $msg);
+   formatSessionMessage("$total_emails $say_email sent.", 'success', $msg);
    setSessionMessage($msg, 'happy');
 }
 

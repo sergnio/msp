@@ -153,7 +153,8 @@ td a:hover {
 }
 
 /* Highlights the entire row Misty Rose color */
-.highlight-row {
+.highlight-row,
+.gamestarted{
   background-color: MistyRose;
 }
 

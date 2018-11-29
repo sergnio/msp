@@ -1817,7 +1817,7 @@ function login2(
             $_SESSION['usermode'] = $usermode;
             $_SESSION['active'] = $active_status;
             
-            //existing bug only showing 1 leaguee
+            //existing bug only showing 1 league
             //$_SESSION['leagues'] = $league_id;
             @ $sth->close();
 			

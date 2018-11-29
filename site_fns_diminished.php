@@ -618,7 +618,7 @@ function get_schedules_admin($week) {  //nsp 4/2016
    echo "   <tbody>\n";
 
    // Ensure we are on CST, since the dates entered into the DB are CST
-   date_default_timezone_set('America/Chicago');
+//   date_default_timezone_set('America/Chicago');`
    $currentTime = date('Y-m-d H:i:s', time());
 
    $conn = db_connect();

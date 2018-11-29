@@ -21,17 +21,27 @@
 
 function db_connect() {
    global $global_mysuperpicks_dbo;
-   $global_mysuperpicks_dbo = new mysqli(HOST, USER_NAME, USER_PASSWORD, DATABASE_NAME);
-   if (mysqli_connect_errno()) {
-      $ermsg = array('ERROR_MESSAGE'=>'Failed to create db handle',  
+   if(!$global_mysuperpicks_dbo = mysqli_init()) {
+   		writeDataToFile("mysql_init failed", __FILE__, __LINE__);
+   }
+    // TODO: DUPLICATE CODE - See site_fns_diminished.php:87 for duplicate
+    //godady does not have timezone data loaded in sql
+   //http://jdnash.com/2014/03/godaddy-mysql-and-the-time-zone-problem/
+   $cTZNow = new DateTime("now", new DateTimeZone(DEFAULT_TIME_ZONE));
+   $dateOffset = date("P", $cTZNow->getTimestamp());
+	
+   if (!$global_mysuperpicks_dbo->options(MYSQLI_INIT_COMMAND, "SET time_zone = '" . $dateOffset . "';")) {
+   		writeDataToFile("set timezone failed", __FILE__, __LINE__);
+   }
+   
+   if (!$global_mysuperpicks_dbo->real_connect(HOST, USER_NAME, USER_PASSWORD, DATABASE_NAME)) {
+   		$ermsg = array('ERROR_MESSAGE'=>'Failed to create db handle',  
          'HOST'=>HOST, 'DATABASE_NAME'=>DATABASE_NAME, 
-         'USER_NAME'=>USER_NAME, 'USER_PASSWORD'=>USER_PASSWORD);
+         'USER_NAME'=>USER_NAME, 'USER_PASSWORD'=>USER_PASSWORD,
+         'MYSQL_CONNECTION_ERROR' => $er);
       writeDataToFile($ermsg, __FILE__, __LINE__);
    }
-   if ($global_mysuperpicks_dbo) {
-     return $global_mysuperpicks_dbo;
-   } else {
-     return false;
-   }
+   
+   return $global_mysuperpicks_dbo;
 }
 ?>

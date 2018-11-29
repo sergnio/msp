@@ -4,8 +4,8 @@
 
    file: site_fns_diminished.php
    date: apr-2016
- author: origninal
-   desc: A support and definintions file.  HTML header and footer are posted
+ author: original
+   desc: A support and definitions file.  HTML header and footer are posted
         here.  This is a diminished (abridged) copy of the original file
         site_fns.php.  The global definitions and standard behaviors were
         removed to mypicks_def.php.  The file mypicks_def.php must be included
@@ -85,26 +85,37 @@ const HIGHLIGHTROW = "highlight-row";
 
 function db_connect() {
    global $global_mysuperpicks_dbo;
-//   $global_mysuperpicks_dbo = new mysqli(HOST, USER_NAME, USER_PASSWORD, DATABASE_NAME,Allow Zero Datetime=true);  Allow Zero Datetime=True
-   $global_mysuperpicks_dbo = new mysqli(HOST, USER_NAME, USER_PASSWORD, DATABASE_NAME, 3307);
-   // TODO: Finish testing, forcing the connect to localhost
-//   $global_mysuperpicks_dbo = new mysqli('127.0.0.1', 'root', '', 'mysuperpicks', 3306);
-   if ($global_mysuperpicks_dbo->connect_errno) {
-      $er = 'errno: ' . $global_mysuperpicks_dbo->connect_error;
-      if (isset($global_mysuperpicks_dbo->error)) {
-         $er .= '\nerrmsg: ' . $global_mysuperpicks_dbo->error;
-      }
-      $ermsg = array('ERROR_MESSAGE'=>'Failed to create db handle',
-         'HOST'=>HOST, 'DATABASE_NAME'=>DATABASE_NAME,
+   if(!$global_mysuperpicks_dbo = mysqli_init()) {
+   		writeDataToFile("mysql_init failed", __FILE__, __LINE__);
+   }
+
+   // TODO: DUPLICATE CODE - See mysql_min_support.php:23 for duplicate
+   //godaddy does not have timezone data loaded in sql
+   //http://jdnash.com/2014/03/godaddy-mysql-and-the-time-zone-problem/
+   $cTZNow = new DateTime("now", new DateTimeZone(DEFAULT_TIME_ZONE));
+   $dateOffset = date("P", $cTZNow->getTimestamp());
+
+    /**
+     * This is a hack
+     * We need to change the database time zone to Pacific time, since the database/godaddy server is running in
+     * Arizona and uses MST, and also the rest of the website operations use Pacific as a baseline.
+     */
+   if (!$global_mysuperpicks_dbo->options(MYSQLI_INIT_COMMAND, "SET time_zone = '" . $dateOffset . "';")) {
+   		writeDataToFile("set timezone failed", __FILE__, __LINE__);
+   }
+   
+   if (!$global_mysuperpicks_dbo->real_connect(HOST, USER_NAME, USER_PASSWORD, DATABASE_NAME)) {
+   		$ermsg = array('ERROR_MESSAGE'=>'Failed to create db handle',  
+         'HOST'=>HOST, 'DATABASE_NAME'=>DATABASE_NAME, 
          'USER_NAME'=>USER_NAME, 'USER_PASSWORD'=>USER_PASSWORD,
          'MYSQL_CONNECTION_ERROR' => $er);
       writeDataToFile($ermsg, __FILE__, __LINE__);
-      return false;
-   } else {
-     return $global_mysuperpicks_dbo;
    }
+   
+   return $global_mysuperpicks_dbo;
 
 }
+
 
 // Modified 4/2016 hfs
 // Additional default parameter 'include_analytics' added along with code
@@ -618,7 +629,7 @@ function get_schedules_admin($week) {  //nsp 4/2016
    echo "   <tbody>\n";
 
    // Ensure we are on CST, since the dates entered into the DB are CST
-//   date_default_timezone_set('America/Chicago');`
+//   date_default_timezone_set('America/Chicago');
    $currentTime = date('Y-m-d H:i:s', time());
 
    $conn = db_connect();

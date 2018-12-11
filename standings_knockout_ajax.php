@@ -6,7 +6,7 @@ require_once 'mypicks_startsession.php';
 standings_knockout_ajax.php
    file: standings_knockout_ajax.php
    date: may-2016
- author: hugh shedd
+ author: originall
    desc: File is linked to main page menu item "Standings"  It's
    the Knockout version of the Pick'm standings page with two tables - weekly 
    results and to-date season results.  It's all callback driven.  See mypicks05.js

@@ -4,7 +4,7 @@
 
    file: mypicks_databaserepair.php
    date: may-2016
- author: hugh shedd
+ author: originall
    desc:
   notes:
 

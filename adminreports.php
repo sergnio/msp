@@ -6,7 +6,7 @@ require_once 'mypicks_startsession.php';
 
    file: adminreports.php 
    date: july-2016
- author: hugh shedd
+ author: originall
    desc: 
 marbles: 
    note:

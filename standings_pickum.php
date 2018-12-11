@@ -6,7 +6,7 @@ require_once 'mypicks_startsession.php';
 
    file: standings_pickum.php
    date: apr-2016
- author: hugh shedd
+ author: originall
    desc: File is accessed thru the league type page standings_switch.php.
    This is the 'Pickem' standings - the page with two tables - weekly results
    and to-date season results.  It's all callback driven.  See mypicks01.js for the

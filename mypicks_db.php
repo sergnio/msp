@@ -4,7 +4,7 @@
 
    file: mypicks_db.php
    date: apr-2016
- author: hugh shedd
+ author: originall
    desc: This file consolidates some of the sql centric php functions.  
    The file site_fns_diminished.php is getting too large.  RULES.  Except
    for login, no SESSION vars are touched unless 'Session' is used in the

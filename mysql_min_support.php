@@ -5,7 +5,7 @@
 
    file: mysql_min_support.php
    date: may-2016
- author: hugh shedd
+ author: originall
    desc: This was created to support the ajax server side database actions.  The 
    site_fns_diminished.php and mypicks_db.php were just to big.
    

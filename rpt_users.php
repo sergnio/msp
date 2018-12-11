@@ -6,7 +6,7 @@ require_once 'mypicks_startsession.php';
 
    file: rpt_users.php
    date: sept-2016
- author: hugh shedd
+ author: originall
    desc: 
 marbles: 
    note:

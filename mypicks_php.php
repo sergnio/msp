@@ -5,7 +5,7 @@
 
    file: mypicks_php.php
    date: apr-2016
- author: hugh shedd
+ author: originall
    desc: Home for non-database php support functions.  site_fns...
       is getting too large to maintain.
 marbles: 

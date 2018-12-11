@@ -5,7 +5,7 @@ require_once 'mypicks_startsession.php';
 :mode=php:
    file: standings_switch.php
    date: jun-2016
- author: hugh shedd
+ author: originall
    desc: The league type director.  League types each have a page to present
       standings.  There's not a lot of difference but anything to eliminate
       logic.  There are 3 league type pages from which to select.

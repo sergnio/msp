@@ -4,7 +4,7 @@
 
    file: mypicks_def.php
    date: apr-2016
- author: hugh shedd
+ author: originall
    desc: A support and definitions file.  Supports environment selection, 
     behavior and php utilities.  This should be required before all other
     files, but after the php start function.  Some functionality of site_fns.php

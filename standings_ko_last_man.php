@@ -6,7 +6,7 @@ require_once 'mypicks_startsession.php';
 
    file: standings_kko_last_man.php
    date: may-2016
- author: hugh shedd
+ author: originall
    desc: One of three standings pages accessed thru the league type page
       standings_switch.php.  The three are pickum, knockout: cohort and last man.
       This is the last man standings page.
